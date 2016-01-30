@@ -6,8 +6,10 @@ Requirements
 
 This project requires Yaml and BeautifulSoup. To install, run:
 
-> $ pip install pyaml
-> $ pip install beautifulsoup4
+```bash
+$ pip install pyaml
+$ pip install beautifulsoup4
+```
 
 Updating configurations
 -----------------------
@@ -19,7 +21,9 @@ Running the program
 
 To run, simply enter:
 
-> $ python show_collector.py
+```bash
+$ python show_collector.py
+```
 
 TODO
 ----
