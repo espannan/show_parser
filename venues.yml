@@ -1,7 +1,11 @@
 regency:
     url: http://www.theregencyballroom.com/events/all
-    parser: regency_parser
+    parser: regency
 
 warfield:
     url: http://www.thewarfieldtheatre.com/events
-    parser: regency_parser
+    parser: regency
+
+fillmore:
+    url: http://thefillmore.com/calendar/
+    parser: fillmore
