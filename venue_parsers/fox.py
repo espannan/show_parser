@@ -2,8 +2,7 @@ from bs4 import BeautifulSoup
 import re
 
 def parse(page):
-    soup = BeautifulSoup(open('fox.html'), 'html.parser')
-    
+    soup = BeautifulSoup(page, 'html.parser')
 
     shows = []
 
@@ -26,13 +25,7 @@ def parse(page):
             show_date = entry.findChild()
             show['date'] = re.sub('\,',', ',show_date.text)
             show_time = main_act.findParent().findParent().findNextSibling()
-            show['time'] = re.sub('show','',show_time.text)
+            show['time'] = re.sub('show','',show_time.text).strip()
             shows.append(show)
 
     return shows
-
-for show in parse(5):
-    print '\t', show['headliner']
-    if 'openers' in show:
-        print '\t\t', show['openers']
-    print '\t\t(', show['time'], ') ', show['date']
