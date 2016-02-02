@@ -36,3 +36,12 @@ def parse(page):
             shows.append(show)
 
     return shows
+
+
+
+
+for show in shows:
+    print '\t', show['headliner']
+    if 'openers' in show:
+        print '\t\t', show['openers']
+    print '\t\t(', show['time'], ') ', show['date']
