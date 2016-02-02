@@ -3,7 +3,6 @@ import re
 
 def parse(page):
     soup = BeautifulSoup(page, 'html.parser')
-    print page
 
     shows = []
 
