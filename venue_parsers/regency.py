@@ -5,7 +5,7 @@ def parse(page):
 
     soup = BeautifulSoup(page, 'html.parser')
 
-    event_list = soup.find_all('div', class_='event_list')[0]
+    event_list = soup.find('div', class_='event_list')
 
     more_info_list = event_list.find_all('a', title='More Info')
 
