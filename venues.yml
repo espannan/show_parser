@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #regency:
 #    url: http://www.theregencyballroom.com/events/all
 #    parser: regency
@@ -13,3 +14,24 @@
 fox:
     url: http://www.thefoxoakland.com/calendar.php
     parser: fox
+=======
+regency:
+    url: http://www.theregencyballroom.com/events/all
+    parser: regency
+    javascript: False
+
+warfield:
+    url: http://www.thewarfieldtheatre.com/events
+    parser: regency
+    javascript: False
+
+fillmore:
+    url: http://thefillmore.com/calendar/
+    parser: fillmore
+    javascript: False
+
+masonic:
+    url: http://sfmasonic.com/venue-calendar/
+    parser: masonic
+    javascript: True
+>>>>>>> master
