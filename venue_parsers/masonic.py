@@ -1,6 +1,4 @@
-from selenium import webdriver
 from bs4 import BeautifulSoup
-import time
 
 def parse(page):
     soup = BeautifulSoup(page, 'html.parser')

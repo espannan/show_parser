@@ -1,0 +1,4 @@
+beautifulsoup4==4.4.1
+PyYAML==3.11
+requests==2.9.1
+selenium==2.52.0
