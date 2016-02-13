@@ -4,12 +4,21 @@ Local Show Parser
 Requirements
 ------------
 
-This project requires Yaml and BeautifulSoup. To install, run:
+If you are first setting up, run: 
 
 ```bash
-$ pip install pyaml
-$ pip install beautifulsoup4
+$ mkvirtualenv shows
+$ pip install -r requirements.txt
 ```
+
+If returning and updating requirements, run:
+
+```bash
+$ workon shows
+$ pip install -r requirements.txt
+```
+
+If not already installed, download [PhantomJS](http://phantomjs.org/download.html) and copy the phantomjs file to /usr/local/bin/. 
 
 Updating configurations
 -----------------------
