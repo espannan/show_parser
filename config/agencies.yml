@@ -2,3 +2,7 @@ advent:
     url: https://adventproperties.appfolio.com/listings/?1463542934435
     parser: advent
     javascript: True
+slpm:
+    url: https://slpm.appfolio.com/listings?1408551123197
+    parser: advent
+    javascript: True

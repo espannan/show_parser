@@ -10,9 +10,9 @@ def parse(page):
         listing['title'] = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()
 
         details = entry.findAll('dd', class_='detail-box__value')
-        listing['price'] = details[0].text
-        listing['size'] = details[1].text
-        listing['bed/bath'] = details[2].text
+        listing['price'] = details[0].text if len(details) >= 1 else ''
+        listing['size'] = details[1].text if len(details) >= 2 else ''
+        listing['bed/bath'] = details[2].text if len(details) >= 3 else ''
         listing['address'] = entry.find('span', class_='js-listing-address').text
 
         listings.append(listing)
