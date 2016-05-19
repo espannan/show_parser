@@ -1,12 +1,20 @@
 advent:
     url: https://adventproperties.appfolio.com/listings/?1463542934435
+    base: https://adventproperties.appfolio.com
     parser: advent
     javascript: True
 slpm:
     url: https://slpm.appfolio.com/listings?1408551123197
+    base: https://slpm.appfolio.com
     parser: advent
     javascript: True
 crpm:
     url: https://communityrealtypm.appfolio.com/listings/?1463635612438
+    base: https://communityrealtypm.appfolio.com
+    parser: advent
+    javascript: True
+bay_property_group:
+    url: https://baypropertygroup.appfolio.com/listings/?1463636254783
+    base: https://baypropertygroup.appfolio.com
     parser: advent
     javascript: True

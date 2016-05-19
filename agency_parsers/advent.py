@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
 
-def parse(page):
+def parse(page, base):
     soup = BeautifulSoup(page, 'html.parser')
     listings = []
 
     for entry in soup.findAll('div', class_='listing-item result js-listing-item'):
         listing = {}
-        listing['url'] = 'https://adventproperties.appfolio.com' + entry.find('a', class_='js-link-to-detail').attrs['href']
+        listing['url'] = base + entry.find('a', class_='js-link-to-detail').attrs['href']
         listing['title'] = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()
 
         details = entry.findAll('dd', class_='detail-box__value')
