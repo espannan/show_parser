@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 from collector import Collector
-from jinja2 import Environment, PackageLoader
+from jinja2 import Environment, FileSystemLoader
 import sys
 
-env = Environment(loader=PackageLoader('show_parser', 'templates'))
+env = Environment(loader=FileSystemLoader('templates'))
 template = env.get_template('rentals.html')
 
 debug = len(sys.argv) > 1 and sys.argv[1] == '-d'
