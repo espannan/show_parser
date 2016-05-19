@@ -9,7 +9,12 @@ def parse(page, base, *args, **kwargs):
         listing = {}
         try:
             listing['url'] = base + entry.find('a', class_='js-link-to-detail').attrs['href']
-            listing['title'] = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()
+
+            try:
+                title = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()
+            except AttributeError:
+                title = 'No Title'
+            listing['title'] = title
 
             details = entry.findAll('dd', class_='detail-box__value')
             listing['price'] = details[0].text if len(details) >= 1 else ''

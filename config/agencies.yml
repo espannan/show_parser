@@ -33,3 +33,8 @@ openworld:
     base: http://openworld.appfolio.com
     parser: advent
     javascript: True
+msb:
+    url: https://msbpropertymanagement.appfolio.com/listings/?1463676684673
+    base: https://msbpropertymanagement.appfolio.com
+    parser: advent
+    javascript: True
