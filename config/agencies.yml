@@ -1,0 +1,4 @@
+advent:
+    url: https://adventproperties.appfolio.com/listings/?1463542934435
+    parser: advent
+    javascript: True

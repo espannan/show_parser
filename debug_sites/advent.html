@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+<head>
+  
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"154b3834d6","applicationID":"202972","transactionName":"IQpaRBZaX18EE00KDxERXV4DRhxaDwUHHg==","queueTime":0,"applicationTime":237,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XA8DQlRTCgoHVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+
+  <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"154b3834d6","applicationID":"202972","transactionName":"IQpaRBZaX18EE00KDxERXV4DRhxaDwUHHg==","queueTime":0,"applicationTime":237,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XA8DQlRTCgoHVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+  <title>Rental Listings</title>
+
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta http-equiv="cleartype" content="on">
+
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+
+  <meta name="msapplication-config" content="none" />
+
+  <link rel="icon" type="image/x-icon" href="/listings/assets/favicon-b65c4c1120dc32a410d0e4f59f7603bcf2119aa42ae93251fbe68cc024c5d759.ico" /><link rel="shortcut icon" type="image/x-icon" href="/listings/assets/favicon-b65c4c1120dc32a410d0e4f59f7603bcf2119aa42ae93251fbe68cc024c5d759.ico" /><link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/listings/assets/appfolio_touch-90fc6855d75f24e7ec2e1b36f2ff871a6ff2e70d4b5faf28c861363994b44ae8.png" /><link rel="apple-touch-startup-image" type="image/x-icon" href="/listings/assets/appfolio_startup-d9243797170560b61e4ad09679cfb1c2fab7410ebc95c245b9e1dff89a3fac82.png" />
+
+  <link rel="stylesheet" media="all" href="/listings/assets/application2-a0cc5dd5cf1d6ef5276021097c7f4f515d73a3072f8f97f7b768e4756210a2f5.css" />
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+
+    .theme-color {
+      background-color: #676767;
+    }
+
+    .theme-color-text {
+      color: #676767;
+    }
+
+    .corner-tag:before {
+      border-bottom-color: #676767 !important;
+    }
+
+    .theme-color-border {
+      border-color: #676767;
+    }
+    
+    .theme-color--actionable:hover, .theme-color--actionable:focus, .theme-color--actionable:active {
+      background-color: #525252;
+    }
+
+  </style>
+
+
+  <!--[if lt IE 9]>
+    <script src="/listings/assets/ie-shims-d299ef24d42e2a11c932a8f50dc5364628920e650bd901942c9ef7a59df5f14d.js"></script>
+  <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-26982405-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+  <main>
+    
+
+
+<form id="filters" class="form js-filter-form form--stacked form--full-width hand-hidden" autocomplete="off" novalidate="novalidate" action="/listings/listings" accept-charset="UTF-8" data-remote="true" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+
+  <div class="topbar theme-color js-top-bar">
+  <div class="u-float-left">
+    <label for="order_by" class="topbar__sort-by__label">Sort By</label>
+    <select include_blank="false" class="topbar__sort-by" name="filters[order_by]" id="filters_order_by"><option selected="selected" value="date_posted">Most Recent</option>
+<option value="rent_asc">Rent (Low to High)</option>
+<option value="rent_desc">Rent (High to Low)</option>
+<option value="bedrooms">Bedrooms</option></select>
+  </div>
+
+  <div class="u-float-right">
+    <ul class="topbar__options">
+      <li class="topbar__item theme-color theme-color--actionable hand-hidden">
+        <a href="#" class="js-toggle-map-button"><span class="icon icon-map-marker"></span> Show Map</a>
+      </li>
+      <li class="topbar__item theme-color theme-color--actionable">
+        <a href="#" class="js-filter-button"><span class="icon icon-filter"></span> Filter</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <input type="hidden" name="filters[property_list]" id="filters_property_list" />
+
+  <div class="filter-menu">
+    <div class="grid">
+      <div class="grid__6">
+        <div class="form__row">
+          <label class="form__row__label">Price Range</label>
+
+          <div class="form__row__body">
+            <div class="form__row__field-wrapper">
+              <ul class="grid grid--no-gutters">
+                <li class="grid__5"><select include_blank="false" name="filters[market_rent_from]" id="filters_market_rent_from"><option value="">No Min.</option>
+<option value="1300">$1,300</option>
+<option value="1400">$1,400</option>
+<option value="1500">$1,500</option>
+<option value="1600">$1,600</option>
+<option value="1700">$1,700</option>
+<option value="1800">$1,800</option>
+<option value="1900">$1,900</option>
+<option value="2000">$2,000</option>
+<option value="2250">$2,250</option>
+<option value="2500">$2,500</option>
+<option value="2750">$2,750</option>
+<option value="3000">$3,000</option>
+<option value="3500">$3,500</option>
+<option value="4000">$4,000</option>
+<option value="4500">$4,500</option>
+<option value="5000">$5,000</option>
+<option value="5500">$5,500</option>
+<option value="6000">$6,000</option>
+<option value="7000">$7,000</option></select></li>
+                <li class="grid__2 u-text-center" style="line-height: 2em;">to</li>
+                <li class="grid__5"><select include_blank="false" name="filters[market_rent_to]" id="filters_market_rent_to"><option value="">No Max.</option>
+<option value="1300">$1,300</option>
+<option value="1400">$1,400</option>
+<option value="1500">$1,500</option>
+<option value="1600">$1,600</option>
+<option value="1700">$1,700</option>
+<option value="1800">$1,800</option>
+<option value="1900">$1,900</option>
+<option value="2000">$2,000</option>
+<option value="2250">$2,250</option>
+<option value="2500">$2,500</option>
+<option value="2750">$2,750</option>
+<option value="3000">$3,000</option>
+<option value="3500">$3,500</option>
+<option value="4000">$4,000</option>
+<option value="4500">$4,500</option>
+<option value="5000">$5,000</option>
+<option value="5500">$5,500</option>
+<option value="6000">$6,000</option>
+<option value="7000">$7,000</option></select></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="grid__6">
+          <div class="grid">
+            <div class="form__row grid__6"><label class="form__row__label" for="filters_bedrooms">Bedrooms</label><div class="form__row__body"><div class="form__row__field-wrapper"><select name="filters[bedrooms]" id="filters_bedrooms"><option value="">0+</option>
+<option value="1">1+</option>
+<option value="2">2+</option>
+<option value="3">3+</option>
+<option value="4">4+</option></select></div></div></div>
+            <div class="form__row grid__6"><label class="form__row__label" for="filters_bathrooms">Bathrooms</label><div class="form__row__body"><div class="form__row__field-wrapper"><select name="filters[bathrooms]" id="filters_bathrooms"><option value="">0+</option>
+<option value="1">1+</option>
+<option value="2">2+</option>
+<option value="3">3+</option></select></div></div></div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="grid">
+      <div class="grid__6">
+        <div class="form__row"><label class="form__row__label" for="filters_cities">Cities</label><div class="form__row__body"><div class="form__row__field-wrapper"><input name="filters[cities][]" type="hidden" value="" /><select multiple="multiple" size="5" class="filter-menu__multi-select" name="filters[cities][]" id="filters_cities"><option value="All Cities">All Cities</option>
+<option value="Berkeley">Berkeley</option>
+<option value="Emeryville">Emeryville</option>
+<option value="Oakland">Oakland</option>
+<option value="San Francisco">San Francisco</option></select></div></div></div>
+      </div>
+      <div class="grid__6">
+        <div class="form__row"><label class="form__row__label" for="filters_postal_codes">Zip Codes</label><div class="form__row__body"><div class="form__row__field-wrapper"><input name="filters[postal_codes][]" type="hidden" value="" /><select multiple="multiple" size="5" class="filter-menu__multi-select" name="filters[postal_codes][]" id="filters_postal_codes"><option value="All Zip Codes">All Zip Codes</option>
+<option value="94103">94103</option>
+<option value="94110">94110</option>
+<option value="94131">94131</option>
+<option value="94601">94601</option>
+<option value="94606">94606</option>
+<option value="94607">94607</option>
+<option value="94608">94608</option>
+<option value="94610">94610</option>
+<option value="94611">94611</option>
+<option value="94619">94619</option>
+<option value="94621">94621</option>
+<option value="94702">94702</option></select></div></div></div>
+      </div>
+    </div>
+
+    <div class="u-text-center">
+      <input type="submit" name="commit" value="Filter" class="filter-form-button btn btn--primary theme-color theme-color--actionable" />
+    </div>
+  </div>
+</form>
+<form id="mobile_filters" class="form js-mobile-filter-form form--stacked form--full-width desk-hidden tablet-hidden" autocomplete="off" novalidate="novalidate" action="/listings/listings" accept-charset="UTF-8" data-remote="true" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+
+  <div class="topbar theme-color js-top-bar">
+  <div class="u-float-left">
+    <label for="order_by" class="topbar__sort-by__label">Sort By</label>
+    <select include_blank="false" class="topbar__sort-by" name="filters[order_by]" id="mobile_filters_order_by"><option selected="selected" value="date_posted">Most Recent</option>
+<option value="rent_asc">Rent (Low to High)</option>
+<option value="rent_desc">Rent (High to Low)</option>
+<option value="bedrooms">Bedrooms</option></select>
+  </div>
+
+  <div class="u-float-right">
+    <ul class="topbar__options">
+      <li class="topbar__item theme-color theme-color--actionable hand-hidden">
+        <a href="#" class="js-toggle-map-button"><span class="icon icon-map-marker"></span> Show Map</a>
+      </li>
+      <li class="topbar__item theme-color theme-color--actionable">
+        <a href="#" class="js-filter-button"><span class="icon icon-filter"></span> Filter</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <input type="hidden" name="filters[property_list]" id="mobile_filters_property_list" />
+
+  <div class="filter-menu">
+    <div class="grid">
+      <div class="grid__12">
+        <div class="form__row">
+          <div class="form__row__body">
+            <div class="form__row__field-wrapper">
+              <ul class="grid grid--no-gutters">
+                <li class="grid__5 u-text-left" style="line-height: 2em; font-weight: bold">
+                  <label>Price Range</label>
+                </li>
+                <li class="grid__3"><select include_blank="false" name="filters[market_rent_from]" id="mobile_filters_market_rent_from"><option value="">No Min.</option>
+<option value="1300">$1,300</option>
+<option value="1400">$1,400</option>
+<option value="1500">$1,500</option>
+<option value="1600">$1,600</option>
+<option value="1700">$1,700</option>
+<option value="1800">$1,800</option>
+<option value="1900">$1,900</option>
+<option value="2000">$2,000</option>
+<option value="2250">$2,250</option>
+<option value="2500">$2,500</option>
+<option value="2750">$2,750</option>
+<option value="3000">$3,000</option>
+<option value="3500">$3,500</option>
+<option value="4000">$4,000</option>
+<option value="4500">$4,500</option>
+<option value="5000">$5,000</option>
+<option value="5500">$5,500</option>
+<option value="6000">$6,000</option>
+<option value="7000">$7,000</option></select></li>
+                <li class="grid__1">&nbsp</li>
+                <li class="grid__3"><select include_blank="false" name="filters[market_rent_to]" id="mobile_filters_market_rent_to"><option value="">No Max.</option>
+<option value="1300">$1,300</option>
+<option value="1400">$1,400</option>
+<option value="1500">$1,500</option>
+<option value="1600">$1,600</option>
+<option value="1700">$1,700</option>
+<option value="1800">$1,800</option>
+<option value="1900">$1,900</option>
+<option value="2000">$2,000</option>
+<option value="2250">$2,250</option>
+<option value="2500">$2,500</option>
+<option value="2750">$2,750</option>
+<option value="3000">$3,000</option>
+<option value="3500">$3,500</option>
+<option value="4000">$4,000</option>
+<option value="4500">$4,500</option>
+<option value="5000">$5,000</option>
+<option value="5500">$5,500</option>
+<option value="6000">$6,000</option>
+<option value="7000">$7,000</option></select></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="grid__12">
+          <div class="form__row"><label class="form__row__label" for="mobile_filters_bedrooms">Bedrooms</label><div class="form__row__body"><div class="form__row__field-wrapper">
+            <div class="radio_block mobile_filters_bedrooms"><span><input id="mobile_filter_bedrooms_" type="radio" value="" checked="checked" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_">0+</label></span><span><input id="mobile_filter_bedrooms_1" type="radio" value="1" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_1">1+</label></span><span><input id="mobile_filter_bedrooms_2" type="radio" value="2" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_2">2+</label></span><span><input id="mobile_filter_bedrooms_3" type="radio" value="3" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_3">3+</label></span><span><input id="mobile_filter_bedrooms_4" type="radio" value="4" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_4">4+</label></span><span><input id="mobile_filter_bedrooms_5" type="radio" value="5" name="filters[bedrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bedrooms_5">5+</label></span></div>
+</div></div></div>        </div>
+        <div class="grid__12">
+          <div class="form__row"><label class="form__row__label" for="mobile_filters_bathrooms">Bathrooms</label><div class="form__row__body"><div class="form__row__field-wrapper">
+            <div class="radio_block mobile_filters_bathrooms"><span><input id="mobile_filter_bathrooms_" type="radio" value="" checked="checked" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_">0+</label></span><span><input id="mobile_filter_bathrooms_1" type="radio" value="1" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_1">1+</label></span><span><input id="mobile_filter_bathrooms_2" type="radio" value="2" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_2">2+</label></span><span><input id="mobile_filter_bathrooms_3" type="radio" value="3" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_3">3+</label></span><span><input id="mobile_filter_bathrooms_4" type="radio" value="4" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_4">4+</label></span><span><input id="mobile_filter_bathrooms_5" type="radio" value="5" name="filters[bathrooms]" /><label class="theme-color theme-color-border" for="mobile_filter_bathrooms_5">5+</label></span></div>
+</div></div></div>        </div>
+
+      <div class="grid__12">
+        <div class="form__row multiselect_box mobile_filters_cities"><label class="form__row__label">Cities</label><div class="form__row__body"><div class="form__row__field-wrapper"><span class="form__row__control"><label for="mobile_filters_cities_all_cities"><input type="checkbox" value="All Cities" name="filters[cities][]" id="mobile_filters_cities_all_cities" />All Cities</label></span><span class="form__row__control"><label for="mobile_filters_cities_berkeley"><input type="checkbox" value="Berkeley" name="filters[cities][]" id="mobile_filters_cities_berkeley" />Berkeley</label></span><span class="form__row__control"><label for="mobile_filters_cities_emeryville"><input type="checkbox" value="Emeryville" name="filters[cities][]" id="mobile_filters_cities_emeryville" />Emeryville</label></span><span class="form__row__control"><label for="mobile_filters_cities_oakland"><input type="checkbox" value="Oakland" name="filters[cities][]" id="mobile_filters_cities_oakland" />Oakland</label></span><span class="form__row__control"><label for="mobile_filters_cities_san_francisco"><input type="checkbox" value="San Francisco" name="filters[cities][]" id="mobile_filters_cities_san_francisco" />San Francisco</label></span><input type="hidden" name="filters[cities][]" value="" /></div></div></div>
+      </div>
+      <div class="grid__12">
+        <div class="form__row multiselect_box mobile_filters_postal_codes"><label class="form__row__label">Zip Codes</label><div class="form__row__body"><div class="form__row__field-wrapper"><span class="form__row__control"><label for="mobile_filters_postal_codes_all_zip_codes"><input type="checkbox" value="All Zip Codes" name="filters[postal_codes][]" id="mobile_filters_postal_codes_all_zip_codes" />All Zip Codes</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94103"><input type="checkbox" value="94103" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94103" />94103</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94110"><input type="checkbox" value="94110" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94110" />94110</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94131"><input type="checkbox" value="94131" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94131" />94131</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94601"><input type="checkbox" value="94601" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94601" />94601</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94606"><input type="checkbox" value="94606" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94606" />94606</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94607"><input type="checkbox" value="94607" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94607" />94607</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94608"><input type="checkbox" value="94608" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94608" />94608</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94610"><input type="checkbox" value="94610" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94610" />94610</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94611"><input type="checkbox" value="94611" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94611" />94611</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94619"><input type="checkbox" value="94619" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94619" />94619</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94621"><input type="checkbox" value="94621" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94621" />94621</label></span><span class="form__row__control"><label for="mobile_filters_postal_codes_94702"><input type="checkbox" value="94702" name="filters[postal_codes][]" id="mobile_filters_postal_codes_94702" />94702</label></span><input type="hidden" name="filters[postal_codes][]" value="" /></div></div></div>
+      </div>
+    </div>
+    <div class="u-text-center">
+      <input type="submit" name="commit" value="Filter" class="filter-form-button btn btn--primary theme-color theme-color--actionable" />
+    </div>
+  </div>
+</form>
+
+
+  <div class="map-panel js-listing-map hand-hidden u-hidden">
+    <div id='googlemap' class="map-panel__googlemap">
+      &nbsp;
+    </div>
+    <div class="map-panel__bottom-button u-text-center">
+      <a href="#" class="map-panel__bottom-button__link u-hidden js-exit-streetview-button">Exit Street View</a>
+      <a href="#" class="map-panel__bottom-button__link u-hidden js-reset-map-button">Reset Map</a>
+    </div>
+  </div>
+
+
+<div id='result_container' class="listings js-listings-container">
+  <div class="listing-item result js-listing-item" id="listing_482">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c" target="_blank" data-mobile-url="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/a7647b13-2871-4709-bbb2-5bf08a4fdf24/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,695</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,695</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">884</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c" target="_blank" data-mobile-url="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c/show_mobile">Advent- Spacious lower apartment home available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">7448 Lockwood Street  - A, Oakland, CA 94621</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="482"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 884</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br /><br />Welcome to your simply stunning two bedroom one bath home! Kitchen features spacious cabinets, granite counter tops, tile flooring, brand new carpets, and abundance of storage space. Both bedrooms feature large double pane energy efficient windows for abundant natural lighting. The a...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Newly Painted, Shared Laundry, Brand New Carpet, Granite Countertops, Tiled Kitchen Floors, Double Pane Energy Effice...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c/show_mobile" href="/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=406ebbbd-2318-4116-a6a0-7262091c695c&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=406ebbbd-2318-4116-a6a0-7262091c695c&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_481">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755" target="_blank" data-mobile-url="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/e8f15b12-69ac-4ab4-bc5c-13b89e057f91/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,495</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">1 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,495</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">650</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">1 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755" target="_blank" data-mobile-url="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755/show_mobile">Advent- Top Floor home with vaulted ceilings available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">1817 Marin Way - 3, Oakland, CA 94606</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="481"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 650</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br />Be the first to live in this sunny, newly remodeled one bedroom, one bath apartment home in the beautiful city of Oakland! Unique location. Access to all the wonderful amenities in the Merritt neighborhood location.<br /><br />Moments from Lake Merritt and direct access to Jack London and the ...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> New Granite Counter Tops, Completey Renovated, Top Floor Residence, Newly Installed Wood Laminate Floors, Gas Stove, ...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755/show_mobile" href="/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=e9658c15-73df-4b1d-992b-28701cd7d755&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=e9658c15-73df-4b1d-992b-28701cd7d755&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_480">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e" target="_blank" data-mobile-url="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/66374c70-96aa-4d3a-8f63-a1f972a8b7f0/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,795</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,795</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">650</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e" target="_blank" data-mobile-url="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e/show_mobile">Advent- Top floor remodeled home available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">1817 Marin Way - 2, Oakland, CA 94606</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="480"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 650</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br /><br />Be the first to live in this sunny, newly remodeled two bedroom, one bath apartment home in the beautiful city of Oakland! Unique location. Access to all the wonderful amenities in the Merritt neighborhood  location.<br /><br /> Moments from Lake Merritt and direct access to Jack London and ...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Newly Painted, Double Pane Energy Efficent Windows, New Kitchen Tiled Floors, Granite countertops, New Gas Stove, Upp...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e/show_mobile" href="/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=381c0ea0-a47f-459f-a9f2-b47a1a5b556e&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=381c0ea0-a47f-459f-a9f2-b47a1a5b556e&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_479">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8" target="_blank" data-mobile-url="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/291ed823-47d5-41bf-b5c1-93fedc364d6d/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$2,095</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 1.5 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$2,095</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">700</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 1.5 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8" target="_blank" data-mobile-url="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8/show_mobile">Advent- Renovated apartment with gated parking available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">1817 Marin Way - 1, Oakland, CA 94606</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="479"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 700</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br />This amazing two bedroom one and a half bath apartment home, features an open floor plan that is perfect for anyone seeking a flexible living space.<br /><br /> Enjoy this lovely home and live the lifestyle you deserve! Modern, sleek, exquisite and contemporary. This apartment home features ne...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> New Hardwood Laminate Flooring, Completely Updated, Newly Remodeled Modern Kitchen, High-efficiency washer/dryer, Dou...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8/show_mobile" href="/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=56cd990f-aa93-4de2-aff1-6c9a3f1c37c8&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=56cd990f-aa93-4de2-aff1-6c9a3f1c37c8&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_478">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb" target="_blank" data-mobile-url="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/374c4d76-034f-4a9b-af21-9a3b212c5ce7/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,395</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">1 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,395</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">650</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">1 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb" target="_blank" data-mobile-url="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb/show_mobile">Advent- Spacious and bright upper floor apartment available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">2622 East 25th Street - 2622, Oakland, CA 94601</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="478"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 650</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description"> Please do not apply online &quot;site unseen.&quot; Applications will not be considered prior to viewing.<br /><br />Recently remodeled one bedroom apartment (upper level) available. Spacious living room with hardwood laminate flooring and abundant natural light. Updated modern kitchen equipped with gas range/oven, full size refrigerator, and ample storage space. <br /><br />Area: Minutes away from Lake Merritt, Lucky&#39;...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Laminate Wood Flooring, Freshly Painted, Gated Community, Street Parking, Top Floor Residence, Gas Stove, Double Pane...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb/show_mobile" href="/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=dbbf3f1b-4620-4049-ac50-525d7bd8b9bb&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=dbbf3f1b-4620-4049-ac50-525d7bd8b9bb&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_388">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202" target="_blank" data-mobile-url="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/80ff5351-4c88-4974-a197-3044bedb4752/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,895</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,895</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">575</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202" target="_blank" data-mobile-url="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202/show_mobile">Advent- Gorgeous top floor apartment Near Piedmont/Grand Lake Neighborhood!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">491 Fairbanks Ave - 3, Oakland, CA 94610</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="388"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 575</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: 5/21/16</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description"><br />Important: Please do not apply to rent &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br /><br />Gorgeous studio residence available in the Grand Lake area of Oakland! This unit features original hardwood floors, high ceilings, and natural light throughout. <br /><br />Kitchen features granite counter tops, gas range and updated cabinetry. Shared free onsite laundry and a shared yard...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Hardwood Floors, Granite countertops, Spacious Living Room, High Ceilings, Unique Floor Plan, Shared Laundry, Shared ...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202/show_mobile" href="/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=089bba00-184a-4ea8-ae6b-b21e132f1202&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=089bba00-184a-4ea8-ae6b-b21e132f1202&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_296">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71" target="_blank" data-mobile-url="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/1cc5ff20-6f1c-4e2b-a8d9-0336763f4b22/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$3,595</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">3 bd / 2.5 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$3,595</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">1,231</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">3 bd / 2.5 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71" target="_blank" data-mobile-url="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71/show_mobile">Advent - Redwood Heights amazing home with Expansive Main Bedroom En Suite! </a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">3715 Harbor View Avenue, Oakland, CA 94619</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="296"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 1,231</span>
+
+
+
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot;  Applications will not be considered prior to viewing.<br /><br />Contemporary 3 bedroom, 2.5 bath home available in Oakland&#39;s Redwood Heights neighborhood. This home is a beautiful urban oasis! Nestled on a picturesque tree-lined street, this residence features a spacious manicured front yard and a magnificent private back yard with paved stone and...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Washer/Dryer In unit, Backyard Patio, 1 car garage, Stainless Steel Appliances, Alarm System Ready, Oak wooden floors...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71/show_mobile" href="/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=dabcae57-d174-45c2-92b0-f850482e3d71&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=dabcae57-d174-45c2-92b0-f850482e3d71&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_475">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb" target="_blank" data-mobile-url="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/26dd3e69-ad5f-40e6-9db8-f2e2dd23b3ad/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$3,595</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">3 bd / 2.5 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$3,595</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">1,966</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">3 bd / 2.5 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb" target="_blank" data-mobile-url="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb/show_mobile">Advent- Enormous Redwood Heights home available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">4760 Davenport Ave. , Oakland, CA 94619</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="475"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 1,966</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br />This Redwood Heights ranch style home offers a spacious and sophisticated dual level design, two car garage, off street parking and multi-tiered level landscaped water-efficient grounds. The fireplace compliments a host of amenities including: energy efficient double pane windows, spac...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Very Spacious!, Urban Oasis, Retro, Wood Fireplace, Dishwasher, Gas Stove, Washer and Dryer Hook Ups, Split- Level Si...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb/show_mobile" href="/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=d60274e2-f436-44f7-ab57-bcd44dad06eb&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=d60274e2-f436-44f7-ab57-bcd44dad06eb&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_477">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93" target="_blank" data-mobile-url="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/e5a3b7cc-e50f-4cc7-a816-cbdf523dd3d9/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$3,695</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">3 bd / 3 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$3,695</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">1,257</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">3 bd / 3 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93" target="_blank" data-mobile-url="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93/show_mobile">Advent- Custom designed South Berkeley town home available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">1418A Harmon St., Berkeley, CA 94702</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="477"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 1,257</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot;  Applications will not be considered prior to viewing.<br /><br />Custom designed townhome built with many Green features! Exceptional construction with radiant floors, custom kitchen and baths, and much more..<br /><br /><br />Come experience the splendor of this South Berkeley town home! The spacious 1300 square foot two bedroom, two bathroom apartment includ...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Cable Ready, Double Pane Energy Efficent Windows, Storm Windows, Hardwood Floors, Tiled Flooring, Patio, Alarm System...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93/show_mobile" href="/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=ab180c88-280b-4e61-9034-67e03a1b6c93&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=ab180c88-280b-4e61-9034-67e03a1b6c93&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_476">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2" target="_blank" data-mobile-url="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/16a39470-80a0-404b-905e-18a88af92246/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$2,695</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 2.5 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$2,695</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">987</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 2.5 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2" target="_blank" data-mobile-url="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2/show_mobile">Advent- Luxury Town home available in the Prescott neighborhood!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">902 Zephyr Drive, Oakland, CA 94607</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="476"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 987</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing. <br /><br />Chic Urban Condo! Townhouse style, gorgeous use of wood laminate floors,granite &amp; stainless steel, gourmet kitchen with balcony,breakfast bar,dining area,open floor-plan,beautiful staircase, two spacious bedrooms with an abundance of closet space with updated bathrooms. Tranquil court...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Laminate Wood Flooring, Stainless Steel Appliances, High-efficiency washer/dryer, Newly Painted, Closet to public tra...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2/show_mobile" href="/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=1f00b775-90bf-4d56-a196-06a35a5333b2&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=1f00b775-90bf-4d56-a196-06a35a5333b2&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_471">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae" target="_blank" data-mobile-url="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/18ccc1e4-3d5d-4cdc-b00d-f2a4caa0b565/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$2,495</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">1 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$2,495</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">720</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">1 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae" target="_blank" data-mobile-url="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae/show_mobile">Advent- Kelton community luxury condo available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">1 Kelton Court #9L, Oakland, CA 94611</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="471"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 720</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot;Applications will not be considered prior to viewing.<br /><br />Amazing private 9th floor condo! Located on a tranquil cul-de-sac, this home has floor-to-ceiling windows, spectacular panoramic views of trees and hills and the beautiful downtown city lights! Piedmont Avenue is just a few blocks away, with access to an abundance of restaurants, shops,...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Spectacular Views, Elevators, Guest Parking, Cul-de-sac, Garage Parking, Gated Community, Close to Piedmont Ave, Clos...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae/show_mobile" href="/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=d42fcc9a-ac36-4335-97d7-918c58cf54ae&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=d42fcc9a-ac36-4335-97d7-918c58cf54ae&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_474">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23" target="_blank" data-mobile-url="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/688a8eaa-0520-40b9-935d-2b7c65d204ec/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$6,795</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">4 bd / 3 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$6,795</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">1,620</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">4 bd / 3 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23" target="_blank" data-mobile-url="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23/show_mobile">Advent- Vibrant and Hip Mission district condo available with parking!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">2171 Mission Street , #402, San Francisco, CA 94110</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="474"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 1,620</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br />Contemporary and spacious top floor condo in vibrant Mission St location. This light filled 4/3 unit has multiple skylights and views of Twin peaks from all bedrooms. Kitchen features gas appliances along with granite countertops. Shared rooftop deck with 360 degree view. Near BART and...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Newly Painted, Very Spacious!, Enormus Living room, High-efficiency washer/dryer, High Ceilings, Dishwasher, Ceiling ...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23/show_mobile" href="/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=6b3ee259-c380-4c1b-9790-aaf15d966d23&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=6b3ee259-c380-4c1b-9790-aaf15d966d23&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_473">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1" target="_blank" data-mobile-url="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/6f5058ba-b56f-42f9-9ea5-8e601f216c86/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$5,695</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">4 bd / 2 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$5,695</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">2,000</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">4 bd / 2 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1" target="_blank" data-mobile-url="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1/show_mobile">Advent- Updated Merced Heights Home With Garage and Sun Porch! </a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">375 Vernon St, San Francisco, CA 94131</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="473"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 2,000</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br />Enjoy your newly painted and updated Merced Heights home! This beautiful home comes with 4+ bedrooms, two full bathrooms, a family room, an enclosed sun porch, decorative fireplace, open layout, large eat-in kitchen with stainless appliances as well as raised planter beds in the back y...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Eat-In Kitchen, Stainless Steel Appliances, Large Soaker Tub, Decorative Fireplace, Period Moldings, Ample Cabinet Sp...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1/show_mobile" href="/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=0fb5362a-f7af-4363-9a29-12eb8932aaa1&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=0fb5362a-f7af-4363-9a29-12eb8932aaa1&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_468">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef" target="_blank" data-mobile-url="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/773b5b55-e455-47a7-a5fd-2cd2849fc161/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$3,595</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 2.5 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$3,595</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">1,458</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 2.5 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef" target="_blank" data-mobile-url="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef/show_mobile">Advent- Contemporary community with dedicated parking available!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">6466 Hollis St. Unit 321, Emeryville, CA 94608</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="468"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 1,458</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br /><br />Built in 2008 by Pulte Homes, Glashaus is a contemporary community featuring all the luxuries, Emeryville has to offer. Glashaus is ideally situated in the heart of Emeryville, steps to the free Emery-Go-Round shuttle to MacArthur BART &amp; AC Transit Transbay bus, across from Starbuck&#39;...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Central air condition, Central heat and air conditioning, Installed alarm system, Laundry closet with washer/dryer, T...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef/show_mobile" href="/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=fab0fb51-9cff-4324-8d22-32f498d86eef&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=fab0fb51-9cff-4324-8d22-32f498d86eef&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_472">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92" target="_blank" data-mobile-url="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/c0ca4d40-a492-4061-a2a4-d447eb17c323/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$3,795</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">2 bd / 1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$3,795</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">720</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">2 bd / 1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92" target="_blank" data-mobile-url="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92/show_mobile">Advent- Amazing South of Market apartment home available now!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">54-64 Sumner Street - 56, San Francisco, CA 94103</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="472"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 720</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot; Applications will not be considered prior to viewing.<br /><br /><br />Live in San Francisco&#39;s trendy new hot spot! Stylish two bedroom, one bath apartment available in the South of Market neighborhood. Located close to popular restaurants, art studios, and tech giants. This apartment features an open floor plan and vaulted ceilings, making it perfect f...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Laminate Hardwood Floors, Freshly Painted, Newly Renovated, VIntage Style Clawfoot Tub, Unique Design, Upper Unit, In...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92/show_mobile" href="/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=b351f6df-43c4-4bb9-ade5-f6a158b11e92&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=b351f6df-43c4-4bb9-ade5-f6a158b11e92&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+<div class="listing-item result js-listing-item" id="listing_470">
+  <div class="listing-item__figure-container">
+    <a class="js-link-to-detail" href="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c" target="_blank" data-mobile-url="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c/show_mobile">
+      <div class="listing-item__figure">
+        <img class="listing-item__image is-placeholder lazy js-listing-image" data-original="https://pa.cdn.appfolio.com/adventproperties/images/309d0774-452f-4c27-bebe-2f616634a22b/medium.jpg" src="/listings/assets/rental_listing/place_holder-902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846.gif" alt="Place holder 902feb64d8b6d481ab8ddda06fbebbba4c95dfa9b7936a7beeb197266cd8b846" />
+        <div class="listing-item__blurb js-listing-item-blurb tablet-hidden desk-hidden">
+          <div class="listing-item__blurb__left">
+              <div class="listing-item__facts u-inline-block">
+                  <h3 class="listing-item__facts__rent js-listing-blurb-rent">$1,695</h3>
+                    <p class="u-space-an js-listing-blurb-bed-bath">1 ba</p>
+              </div>
+          </div><!-- No Space Here
+       --><div class="listing-item__blurb__right">
+            <p class="u-space-an">View Details</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="listing-item__body">
+    <div class="detail-box hand-hidden u-space-bs js-listing-quick-facts">
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Rent</dt>
+          <dd class="detail-box__value">$1,695</dd>
+        </dl>
+        <dl class="detail-box__item">
+          <dt class="detail-box__label">Square Feet</dt>
+          <dd class="detail-box__value">500</dd>
+        </dl>
+          <dl class="detail-box__item">
+            <dt class="detail-box__label">Bed / Bath</dt>
+            <dd class="detail-box__value">1 ba</dd>
+          </dl>
+    </div>
+
+      <h2 class="listing-item__title js-listing-title">
+        <a class="js-link-to-detail" href="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c" target="_blank" data-mobile-url="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c/show_mobile">Advent- Newly remodeled studio with an abundance of natural light!</a>
+      </h2>
+    <p class="u-space-an">
+      <span class="u-pad-rm js-listing-address">381 Oakland Avenue - 37, Oakland, CA 94611</span>
+        <a href="#" class="hand-hidden js-listing-map-view-link listing-item__map-link" data-listing-id="470"><span class="icon icon-map-marker"></span>&nbsp;Map</a>
+    </p>
+
+    <p class="u-space-an">
+        <span class="u-space-rm js-listing-square-feet desk-hidden tablet-hidden" style="display: inline-block">Square Feet: 500</span>
+
+
+
+        <span class="js-listing-available" style="display: inline-block">Available: Now</span>
+    </p>
+    <p class="hand-hidden tablet-hidden u-space-ts js-listing-description">Important: Please do not apply online &quot;sight unseen.&quot;Applications will not be considered prior to viewing.<br /><br />Newly remodeled sunny and distinguished apartment home on the second floor with double pane windows in a well-maintained and charming vintage 1920&#39;s bldg. <br /><br />Located in highly desirable Adams Point location. Close proximity to Whole Foods, Lake Merritt, Piedmont Avenue, Uptown, and sho...</p>
+    <p class="hand-hidden tablet-hidden">
+        <span>Amenities:</span> Brand New Carpet, Security/video surveillance system, Top Floor Residence, Intercom System for Controlled Access, Sha...
+    </p>
+  </div>
+
+  <div class="listing-item__actions js-listing-actions hand-hidden">
+    <a target="_blank" class="btn js-hand-hidden-link-to-detail js-link-to-detail" data-mobile-url="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c/show_mobile" href="/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c">View Details</a>
+      <a target="_blank" class="btn btn--primary theme-color theme-color--actionable js-listing-apply" href="/listings/rental_applications/new?listable_uid=edf8c633-1177-49cf-81d4-42c6c7c5647c&amp;source=Website">Apply Now</a>
+  </div>
+
+  <div class="tablet-hidden desk-hidden">
+      <a target="_blank" class="listing-item__apply theme-color-text" href="/listings/rental_applications/new?listable_uid=edf8c633-1177-49cf-81d4-42c6c7c5647c&amp;source=Website"><span class="icon icon-home"></span> Apply Now</a>
+  </div>
+</div>
+
+
+<div class='no_vacancies u-hidden listings__no-vacancies'>No vacancies found matching your search criteria.</div>
+
+
+</div>
+
+  </main>
+
+<script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?client=gme-appfolio&amp;sensor=true&amp;v=3.8.4"></script>
+<script src="/listings/assets/application2-5b6305df3250a60d89fffbbeeebca73c27d20c0a7ee260ed6cf31a0260a0b6f4.js"></script>
+  <script type="text/javascript">
+    window.PARENTIFRAMEID = "noframe";
+    window.googleMap = new GoogleMap({
+      container: 'googlemap',
+      markers: [{"latitude":37.761895,"longitude":-122.179596,"address":"7448 Lockwood Street  - A, Oakland, CA 94621","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/a7647b13-2871-4709-bbb2-5bf08a4fdf24/medium.jpg","market_rent":"$1,695","unit_specs":"2 bd, 1 ba, 884 SF","listing_id":482,"detail_page_url":"/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c","zoomed_in":false},{"latitude":37.7872424,"longitude":-122.2413445,"address":"1817 Marin Way - 3, Oakland, CA 94606","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/e8f15b12-69ac-4ab4-bc5c-13b89e057f91/medium.jpg","market_rent":"$1,495","unit_specs":"1 bd, 1 ba, 650 SF","listing_id":481,"detail_page_url":"/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755","zoomed_in":false},{"latitude":37.7872424,"longitude":-122.2413445,"address":"1817 Marin Way - 2, Oakland, CA 94606","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/66374c70-96aa-4d3a-8f63-a1f972a8b7f0/medium.jpg","market_rent":"$1,795","unit_specs":"2 bd, 1 ba, 650 SF","listing_id":480,"detail_page_url":"/listings/listings/381c0ea0-a47f-459f-a9f2-b47a1a5b556e","zoomed_in":false},{"latitude":37.7872424,"longitude":-122.2413445,"address":"1817 Marin Way - 1, Oakland, CA 94606","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/291ed823-47d5-41bf-b5c1-93fedc364d6d/medium.jpg","market_rent":"$2,095","unit_specs":"2 bd, 1.5 ba, 700 SF","listing_id":479,"detail_page_url":"/listings/listings/56cd990f-aa93-4de2-aff1-6c9a3f1c37c8","zoomed_in":false},{"latitude":37.7897974,"longitude":-122.2234111,"address":"2622 East 25th Street - 2622, Oakland, CA 94601","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/374c4d76-034f-4a9b-af21-9a3b212c5ce7/medium.jpg","market_rent":"$1,395","unit_specs":"1 bd, 1 ba, 650 SF","listing_id":478,"detail_page_url":"/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb","zoomed_in":false},{"latitude":37.817316,"longitude":-122.243326,"address":"491 Fairbanks Ave - 3, Oakland, CA 94610","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/80ff5351-4c88-4974-a197-3044bedb4752/medium.jpg","market_rent":"$1,895","unit_specs":"1 ba, 575 SF","listing_id":388,"detail_page_url":"/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202","zoomed_in":false},{"latitude":37.795831,"longitude":-122.192982,"address":"3715 Harbor View Avenue, Oakland, CA 94619","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/1cc5ff20-6f1c-4e2b-a8d9-0336763f4b22/medium.jpg","market_rent":"$3,595","unit_specs":"3 bd, 2.5 ba, 1,231 SF","listing_id":296,"detail_page_url":"/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71","zoomed_in":false},{"latitude":37.7862046,"longitude":-122.18267,"address":"4760 Davenport Ave. , Oakland, CA 94619","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/26dd3e69-ad5f-40e6-9db8-f2e2dd23b3ad/medium.jpg","market_rent":"$3,595","unit_specs":"3 bd, 2.5 ba, 1,966 SF","listing_id":475,"detail_page_url":"/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb","zoomed_in":false},{"latitude":37.8486982,"longitude":-122.2788753,"address":"1418A Harmon St., Berkeley, CA 94702","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/e5a3b7cc-e50f-4cc7-a816-cbdf523dd3d9/medium.jpg","market_rent":"$3,695","unit_specs":"3 bd, 3 ba, 1,257 SF","listing_id":477,"detail_page_url":"/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93","zoomed_in":false},{"latitude":37.81327,"longitude":-122.298604,"address":"902 Zephyr Drive, Oakland, CA 94607","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/16a39470-80a0-404b-905e-18a88af92246/medium.jpg","market_rent":"$2,695","unit_specs":"2 bd, 2.5 ba, 987 SF","listing_id":476,"detail_page_url":"/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2","zoomed_in":false},{"latitude":37.8243896,"longitude":-122.2508859,"address":"1 Kelton Court #9L, Oakland, CA 94611","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/18ccc1e4-3d5d-4cdc-b00d-f2a4caa0b565/medium.jpg","market_rent":"$2,495","unit_specs":"1 bd, 1 ba, 720 SF","listing_id":471,"detail_page_url":"/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae","zoomed_in":false},{"latitude":37.7622717,"longitude":-122.4190933,"address":"2171 Mission Street , #402, San Francisco, CA 94110","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/688a8eaa-0520-40b9-935d-2b7c65d204ec/medium.jpg","market_rent":"$6,795","unit_specs":"4 bd, 3 ba, 1,620 SF","listing_id":474,"detail_page_url":"/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23","zoomed_in":false},{"latitude":37.719236,"longitude":-122.468327,"address":"375 Vernon St, San Francisco, CA 94131","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/6f5058ba-b56f-42f9-9ea5-8e601f216c86/medium.jpg","market_rent":"$5,695","unit_specs":"4 bd, 2 ba, 2,000 SF","listing_id":473,"detail_page_url":"/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1","zoomed_in":false},{"latitude":37.8463869,"longitude":-122.2911716,"address":"6466 Hollis St. Unit 321, Emeryville, CA 94608","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/773b5b55-e455-47a7-a5fd-2cd2849fc161/medium.jpg","market_rent":"$3,595","unit_specs":"2 bd, 2.5 ba, 1,458 SF","listing_id":468,"detail_page_url":"/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef","zoomed_in":false},{"latitude":37.7760881,"longitude":-122.4103419,"address":"54-64 Sumner Street - 56, San Francisco, CA 94103","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/c0ca4d40-a492-4061-a2a4-d447eb17c323/medium.jpg","market_rent":"$3,795","unit_specs":"2 bd, 1 ba, 720 SF","listing_id":472,"detail_page_url":"/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92","zoomed_in":false},{"latitude":37.8174778,"longitude":-122.2561171,"address":"381 Oakland Avenue - 37, Oakland, CA 94611","default_photo_url":"https://pa.cdn.appfolio.com/adventproperties/images/309d0774-452f-4c27-bebe-2f616634a22b/medium.jpg","market_rent":"$1,695","unit_specs":"1 ba, 500 SF","listing_id":470,"detail_page_url":"/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c","zoomed_in":false}],
+      infoWindowTemplate:  _.template('<div class=\'map-popup\' id=\'map-popup-<%= listing_id %>\'>\n\n  <div class=\"map-popup-thumbnail\">\n    <a href=\"<%= detail_page_url %>\" target=\"_blank\"><img src=\'<%= default_photo_url %>\' width=\'144\'/><\/a>\n  <\/div>\n\n  <div class=\"map-popup-info\">\n    <p class=\"map-zoom-link-container\"><a href=\'#\' class=<%= zoomed_in ? \'js-map-zoom-out-link\' : \'js-map-zoom-in-link\' %> listing-id=\"<%= listing_id%>\"><%= zoomed_in ? \'Zoom Out\' : \'Zoom In\'%><\/a><\/p>\n    <h3 class=\"map-popup-rent\"><%= market_rent %><\/h3>\n    <p class=\"map-popup-specs\"><%= unit_specs %><\/p>\n    <p class=\"map-popup-address\"><%= address %><\/p>\n\n    <p>\n      <a href=\"<%= detail_page_url %>\" target=\"_blank\" class=\"btn\">Details<\/a>\n      <a href=\'#\' class=\'btn js-street-view-link\' latitude=\'<%= latitude %>\' longitude=<%= longitude %>>Street View<\/a>\n      <a href=\'https://maps.google.com/maps?daddr=<%= address %>&saddr=\' target=\'_blank\' class=\'btn directions-link\'>Directions<\/a>\n    <\/p>\n  <\/div>\n<\/div>'),
+      onChange: ListingIndexMap.filterListings,
+      onMarkerClick: ListingIndexMap.expandMapAndMoveListingToTop
+    });
+
+    listingManagerInstance = new listings.listingsManager('.js-listings-container', '.js-filter-form', '#filters_order_by');
+    listingManagerInstanceMobile = new listings.listingsManager('.js-listings-container', '.js-mobile-filter-form', '#mobile_filters_order_by');
+  </script>
+
+
+
+</body>
+</html>
