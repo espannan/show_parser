@@ -23,3 +23,8 @@ discovery:
     base: https://discovery.appfolio.com
     parser: advent
     javascript: True
+cwp:
+    url: https://cwp.appfolio.com/listings/?1463673996972
+    base: https://cwp.appfolio.com
+    parser: advent
+    javascript: True
