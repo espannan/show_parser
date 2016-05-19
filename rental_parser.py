@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 from collector import Collector
+from jinja2 import Environment, PackageLoader
 import sys
+
+env = Environment(loader=PackageLoader('show_parser', 'templates'))
+template = env.get_template('rentals.html')
 
 debug = len(sys.argv) > 1 and sys.argv[1] == '-d'
 
@@ -16,3 +20,9 @@ for agency, listings in agency_listings.items():
         print '\t\tBed/Bath: ', listing['bed/bath']
         print '\t\tSize: ', listing['size'], ' sq ft'
         print '\t\tURL: ', listing['url']
+
+rendered_page = template.render(agency_listings=agency_listings)
+
+f = open('rentals.html', 'w')
+f.write(rendered_page)
+f.close()

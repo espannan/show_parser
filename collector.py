@@ -37,6 +37,6 @@ class Collector(object):
                 page = self.get_loaded_page(info['url'])
             else:
                 page = requests.get(info['url'], headers=headers).content
-            site_contents[site] = parser.parse(page, base)
+            site_contents[site.capitalize().replace('_', ' ')] = parser.parse(page, base)
 
         return site_contents
