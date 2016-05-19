@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import re
 
-def parse(page):
+
+def parse(page, *args, **kwargs):
 
     soup = BeautifulSoup(page, 'html.parser')
 
@@ -16,7 +17,7 @@ def parse(page):
 
         # this line has a show
         if text:
-            show = {'headliner' : text}
+            show = {'headliner': text}
 
             # check for openers
             text = re.sub(r'\s+', ' ', info.parent.findNextSibling('h4').text).strip()

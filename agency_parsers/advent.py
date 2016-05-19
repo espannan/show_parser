@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 
-def parse(page, base):
+
+def parse(page, base, *args, **kwargs):
     soup = BeautifulSoup(page, 'html.parser')
     listings = []
 
@@ -18,15 +19,3 @@ def parse(page, base):
         listings.append(listing)
 
     return listings
-
-def debug():
-    #url = 'https://adventproperties.appfolio.com/listings/?1463542934435'
-    #headers = {'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30'}
-    #import requests
-    #page = requests.get(url, headers=headers).content
-    f = open('advent.html', 'r')
-    page = f.read()
-    f.close()
-    listings = parse(page)
-    print listings
-    return BeautifulSoup(page, 'html.parser')

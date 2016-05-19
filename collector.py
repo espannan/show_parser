@@ -3,6 +3,7 @@ import requests
 from selenium import webdriver
 import time
 
+
 class Collector(object):
 
     def __init__(self, config_file, parser_directory, debug=False):
@@ -10,13 +11,12 @@ class Collector(object):
         self.parser_directory = parser_directory
         self.debug = debug
 
-
     def get_loaded_page(self, url):
         try:
             driver = webdriver.PhantomJS(executable_path='/usr/local/bin/phantomjs')
         except AttributeError:
             pass
-        driver.get(url) 
+        driver.get(url)
         time.sleep(3)
         page_source = driver.page_source.encode('utf-8')
         driver.close()
@@ -28,8 +28,8 @@ class Collector(object):
 
         for site, info in self.sites.items():
             parser = __import__(self.parser_directory + '.' + info['parser'], fromlist=[info['parser']])
-            base = info['base']
-            headers = {'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30'}
+            base = info.get('base', '')
+            headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30'}
             if self.debug:
                 f = open('debug_sites/' + site + '.html', 'r')
                 page = f.read()

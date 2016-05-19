@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import re
 
-def parse(page):
+
+def parse(page, *args, **kwargs):
     soup = BeautifulSoup(page, 'html.parser')
 
     shows = []
@@ -9,7 +10,7 @@ def parse(page):
     for entry in soup.find_all('div', class_='faq_main calendar'):
         parts = entry.findChild('p', class_='title').text.split('with')
 
-        show = {'headliner' : parts[0]}
+        show = {'headliner': parts[0]}
 
         if len(parts) > 1:
             show['openers'] = parts[1].strip()
@@ -25,4 +26,3 @@ def parse(page):
         shows.append(show)
 
     return shows
-
