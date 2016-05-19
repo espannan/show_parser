@@ -28,3 +28,8 @@ cwp:
     base: https://cwp.appfolio.com
     parser: advent
     javascript: True
+openworld:
+    url: http://openworld.appfolio.com/listings?1463675923117
+    base: http://openworld.appfolio.com
+    parser: advent
+    javascript: True
