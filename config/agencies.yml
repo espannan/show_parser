@@ -18,3 +18,8 @@ bay_property_group:
     base: https://baypropertygroup.appfolio.com
     parser: advent
     javascript: True
+discovery:
+    url: https://discovery.appfolio.com/listings/?1463637442457
+    base: https://discovery.appfolio.com
+    parser: advent
+    javascript: True
