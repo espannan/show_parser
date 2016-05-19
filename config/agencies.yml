@@ -6,3 +6,7 @@ slpm:
     url: https://slpm.appfolio.com/listings?1408551123197
     parser: advent
     javascript: True
+crpm:
+    url: https://communityrealtypm.appfolio.com/listings/?1463635612438
+    parser: advent
+    javascript: True
