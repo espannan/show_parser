@@ -10,6 +10,8 @@ class Collector(object):
         self.sites = yaml.load(open(config_file))
         self.parser_directory = parser_directory
         self.debug = debug
+        self.site_divider = '*****'
+        self.item_divider = '^^^^^'
 
     def get_loaded_page(self, url):
         try:
@@ -22,6 +24,19 @@ class Collector(object):
         driver.close()
 
         return page_source
+
+    def write_log(self, site_contents, log_title):
+        f = open('logs/%s.txt' % log_title, 'w')
+        log_message = []
+        for site, contents in site_contents.items():
+            log_message.append(self.site_divider)
+            log_message.append(site)
+            for content in contents:
+                log_message.append(self.item_divider)
+                for category, info in content.items():
+                    log_message.append('%s: %s' % (category, info))
+        f.write('\n'.join(log_message))
+        f.close()
 
     def scrape_sites(self):
         site_contents = {}

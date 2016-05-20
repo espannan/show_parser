@@ -22,6 +22,8 @@ for agency, listings in agency_listings.items():
         print '\t\tSize: ', listing['size'], ' sq ft'
         print '\t\tURL: ', listing['url']
 
+collector.write_log(agency_listings, 'rentals')
+
 rendered_page = template.render(agency_listings=agency_listings)
 
 f = open('rentals.html', 'w')
