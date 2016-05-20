@@ -12,6 +12,7 @@ class Collector(object):
         self.debug = debug
         self.site_divider = '*****'
         self.item_divider = '^^^^^'
+        self.title_divider = ':::'
 
     def get_loaded_page(self, url):
         try:
@@ -25,6 +26,26 @@ class Collector(object):
 
         return page_source
 
+    def load_log(self, log_title):
+        f = open('logs/%s.txt' % log_title, 'r')
+        full_file = f.read()
+        sites_dict = {}
+        site_chunks = full_file.strip().split(self.site_divider)[1:]
+        for site in site_chunks:
+            site_listings = []
+            full_chunk = site.strip().split(self.item_divider)
+            site = full_chunk[0].strip()
+            listing_chunks = full_chunk[1:]
+            for listing in listing_chunks:
+                listing_dict = {}
+                line_items = listing.strip().split('\n')
+                for line_item in line_items:
+                    parts = line_item.strip().split(self.title_divider)
+                    listing_dict[parts[0]] = parts[1] if len(parts) > 1 else ''
+                site_listings.append(listing_dict)
+            sites_dict[site] = site_listings
+        return sites_dict
+
     def write_log(self, site_contents, log_title):
         f = open('logs/%s.txt' % log_title, 'w')
         log_message = []
@@ -34,7 +55,7 @@ class Collector(object):
             for content in contents:
                 log_message.append(self.item_divider)
                 for category, info in content.items():
-                    log_message.append('%s: %s' % (category, info))
+                    log_message.append('%s%s%s' % (category, self.title_divider, info))
         f.write('\n'.join(log_message))
         f.close()
 

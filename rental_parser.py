@@ -10,6 +10,8 @@ debug = len(sys.argv) > 1 and sys.argv[1] == '-d'
 
 collector = Collector('config/agencies.yml', 'agency_parsers', debug)
 
+collector.load_log('rentals')
+
 agency_listings = collector.scrape_sites()
 
 for agency, listings in agency_listings.items():
