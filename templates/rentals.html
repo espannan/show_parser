@@ -1,21 +1,33 @@
-<html>
-	<h1>Rentals</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <title>Rentals!</title>
+  <body>
+    <h1>Rentals</h1>
+    <ul>
+      {% for agency in agency_listings.keys() %}
+        <li><a href={{"#%s" % agency}}>{{ agency.capitalize().replace('_', ' ') }}</a></li>
+      {% endfor %}
+    </ul>
 
-	{% for agency, listings in agency_listings.items() %}
-		<h2>{{ agency }}</h2>
-		<ul>
-			{% for listing in listings %}
-				<li>
-					<h3>{{ listing["title"] }}</h3>
-					<ul>
-						<li><b>Address: </b>{{ listing["address"] }}</li>
-						<li><b>Price: </b>{{ listing["price"] }}</li>
-						<li><b>Bed/Bath: </b>{{ listing["bed/bath"] }}</li>
-						<li><b>Size: </b>{{ listing["size"] }}</li>
-						<li><b>URL: </b><a href={{ listing["url"]}}>{{ listing["url"] }}</a></li>
-					</ul>
-				</li>
-			{% endfor %}
-		</ul>
-	{% endfor %}
+    <table>
+    {% for agency, listings in agency_listings.items() %}
+      <tr><td colspan=2><h2><a name={{agency}}>{{ agency.capitalize().replace('_', ' ') }}</a></h2></td></tr>
+        {% for listing in listings %}
+          <tr>
+            <td colspan=2><b><a target="blank" href={{ listing["url"]}}>{{ listing["title"] }}</a></b></td>
+          </tr>
+          <tr>
+            <td><b>Address: </b>{{ listing["address"] }}</td>
+            <td><b>Price: </b>{{ listing["price"] }}</td>
+          </tr>
+          <tr>
+            <td><b>Bed/Bath: </b>{{ listing["bed/bath"] }}</td>
+            <td><b>Size: </b>{{ listing["size"] }}</td>
+          </tr>
+          <tr><td><br \></td></tr>
+        {% endfor %}
+        <tr><td colspan=2><hr \></td></tr>
+    {% endfor %}
+    </table>
+  </body>
 </html>

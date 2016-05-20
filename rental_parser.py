@@ -13,7 +13,7 @@ collector = Collector('config/agencies.yml', 'agency_parsers', debug)
 agency_listings = collector.scrape_sites()
 
 for agency, listings in agency_listings.items():
-    print agency
+    print agency.capitalize().replace('_', ' ')
     for listing in listings:
         print '\t', listing['title']
         print '\t\tPrice: ', listing['price']
