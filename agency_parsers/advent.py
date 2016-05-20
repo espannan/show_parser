@@ -20,7 +20,7 @@ def parse(page, base, *args, **kwargs):
             listing['price'] = details[0].text if len(details) >= 1 else ''
             listing['size'] = details[1].text if len(details) >= 2 else ''
             listing['bed/bath'] = details[2].text if len(details) >= 3 else ''
-            listing['address'] = entry.find('span', class_='js-listing-address').text
+            listing['address'] = entry.find('span', class_='u-pad-rm js-listing-address').text
 
             listings.append(listing)
         except AttributeError:

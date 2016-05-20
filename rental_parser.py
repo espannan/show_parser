@@ -17,6 +17,7 @@ for agency, listings in agency_listings.items():
     for listing in listings:
         print '\t', listing['title']
         print '\t\tPrice: ', listing['price']
+        print '\t\tAddress: ', listing['address']
         print '\t\tBed/Bath: ', listing['bed/bath']
         print '\t\tSize: ', listing['size'], ' sq ft'
         print '\t\tURL: ', listing['url']
