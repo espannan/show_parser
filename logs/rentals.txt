@@ -1,23 +1,65 @@
 *****
 bay_property_group
 ^^^^^
+title:::5-Bed / 3-Bath:  Grace & Space at the top of Pacific Heights
+url:::https://baypropertygroup.appfolio.com/listings/listings/1287d508-ac5b-4114-a3a1-8f7c75a831af
+price:::$15,000
+bed/bath:::5 bd / 3 ba
+address:::2609 Scott Street, San Francisco, CA 94123
+size:::3,800
+^^^^^
+title:::Bright & Quiet 1-Bed / 1-Bath with Parking, Steps to Clement St. shops
+url:::https://baypropertygroup.appfolio.com/listings/listings/d99048ab-eef9-429b-88a4-0bb54ed6cc5d
+price:::$2,600
+bed/bath:::1 bd / 1 ba
+address:::349 2nd Avenue #3, San Francisco, CA 94118
+size:::700
+^^^^^
+title:::No Title
+url:::https://baypropertygroup.appfolio.com/listings/listings/cce9a374-3532-442c-be23-ceba8570f488
+price:::$0
+bed/bath:::4 bd / 1 ba
+address:::905-907 Pine Street - 907, Oakland, CA 94607
+size:::1,100
+^^^^^
+title:::Spacious & Bright - 1 Bed /1 Bath w/ Pkg & Views, Walk to UCSF
+url:::https://baypropertygroup.appfolio.com/listings/listings/b7896779-4d56-4dc2-9ff7-b2184fad076c
+price:::$2,995
+bed/bath:::1 bd / 1 ba
+address:::1467, 7th Ave - 205, San Francisco, CA 94122
+size:::795
+^^^^^
+title:::Spacious and nice,1 bedroom condo near grand lake theater with parking!
+url:::https://baypropertygroup.appfolio.com/listings/listings/cc12eb10-4a40-439a-bcaa-856b2deb4f83
+price:::$2,050
+bed/bath:::1 bd / 1 ba
+address:::455 Crescent Street, #102, Oakland, CA 94610
+size:::760
+^^^^^
+title:::TOTAL REMODEL BRIGHT 2BR/1BA Heart of Noe Valley AVAILABLE 6/1
+url:::https://baypropertygroup.appfolio.com/listings/listings/897f2896-2d8b-4734-b92a-362a59f5ea09
+price:::$3,795
+bed/bath:::2 bd / 1 ba
+address:::3892 26th Street, San Francisco, CA 94131
+size:::950
+^^^^^
 title:::Spacious 1 bedroom 1 bath with bonus room, near Bancroft Ave public transportation. Call for Showing!
 url:::https://baypropertygroup.appfolio.com/listings/listings/fc2b6d1b-2138-49d7-97ef-59f1ac108353
-price:::$1,395
+price:::$1,325
 bed/bath:::2 bd / 1 ba
 address:::2451 Seminary Avenue - 305, Oakland, CA 94605
 size:::806
 ^^^^^
 title:::Spacious 2 bedroom 1 bath, near Bancroft Ave public transportation. Call for Showing!
 url:::https://baypropertygroup.appfolio.com/listings/listings/4eeab985-53b9-42b5-86e8-2da5399d5c8d
-price:::$1,325
+price:::$1,295
 bed/bath:::2 bd / 1 ba
 address:::2451 Seminary Avenue - 306, Oakland, CA 94605
 size:::700
 ^^^^^
 title:::TOTAL REMODEL LARGE BRIGHT 2BR/1BA TOP FLOOR WESTERN VIEWS AVAILABLE 6/1
 url:::https://baypropertygroup.appfolio.com/listings/listings/805e0564-983c-4006-b7c4-0f9a371b95c7
-price:::$4,695
+price:::$4,395
 bed/bath:::2 bd / 1 ba
 address:::320-322A Coleridge Street - 320, San Francisco, CA 94110
 size:::1,350
@@ -29,33 +71,12 @@ bed/bath:::
 address:::2121 Parker Street, Upper - Upper, Berkeley, CA 94704
 size:::2 bd / 1 ba
 ^^^^^
-title:::Spacious 1 bedroom 1 bath, near Mac Arthur Blvd, highway 580
-url:::https://baypropertygroup.appfolio.com/listings/listings/b765b9e7-7ebb-450a-aa38-dad178c607dd
-price:::$1,249
-bed/bath:::1 bd / 1 ba
-address:::2451 Seminary Avenue - 102, Oakland, CA 94605
-size:::700
-^^^^^
-title:::Nice Clean Studio - Steps to UCSF Medical Ctr., w/ Parking
-url:::https://baypropertygroup.appfolio.com/listings/listings/99e0a89c-963c-4417-962c-778e72e40d12
-price:::$2,300
-bed/bath:::1 ba
-address:::330 Parnassus Avenue - 103, San Francisco, CA 94117
-size:::450
-^^^^^
 title:::Beautiful Single Family Home With Swimming Pool!
 url:::https://baypropertygroup.appfolio.com/listings/listings/6067fe86-2b6a-4b59-9b7d-20d08937a2fd
 price:::$6,500
 bed/bath:::4 bd / 2.5 ba
 address:::2151 Deodara Drive, Los Altos, CA 94024-7238
 size:::2,445
-^^^^^
-title:::Spacious and nice,1 bedroom condo near grand lake theater with parking!
-url:::https://baypropertygroup.appfolio.com/listings/listings/cc12eb10-4a40-439a-bcaa-856b2deb4f83
-price:::$2,195
-bed/bath:::1 bd / 1 ba
-address:::455 Crescent Street, #102, Oakland, CA 94610
-size:::760
 ^^^^^
 title:::Beautiful Home In Lovely Los Altos!
 url:::https://baypropertygroup.appfolio.com/listings/listings/a2707d13-3304-448d-8b42-b3883a3a8afa
@@ -64,42 +85,21 @@ bed/bath:::4 bd / 3 ba
 address:::1666 Jolly Court, Los Altos, CA 94024
 size:::2,291
 ^^^^^
-title:::Beautiful Willow Glen 3 Bedroom 2.5 Bath End Unit Town-home!
-url:::https://baypropertygroup.appfolio.com/listings/listings/7a700a13-a2e3-461f-97a5-628b6ae1af53
-price:::$3,975
-bed/bath:::3 bd / 2.5 ba
-address:::1430 Curtiss Avenue, San Jose, CA 95125-2407
-size:::1,891
-^^^^^
 title:::Cute And Convenient 2 Bedroom 1 Bath Apartment With Garaged Parking Space!
 url:::https://baypropertygroup.appfolio.com/listings/listings/2c5a0b44-bc76-456d-a581-d4260b32bc9d
-price:::$2,195
+price:::$1,995
 bed/bath:::2 bd / 1 ba
 address:::1610 Santa Clara Street - 1, Santa Clara, CA 95050
 size:::770
 ^^^^^
 title:::Beautiful 5 Bedroom 3 Bath Home In Fantastic Fremont Neighborhood!
 url:::https://baypropertygroup.appfolio.com/listings/listings/d9fa910a-31a2-4ed4-8423-a5f157455a22
-price:::$4,950
+price:::$4,600
 bed/bath:::5 bd / 3 ba
 address:::38722 Chimaera Circle, Fremont, CA 94536
 size:::2,157
-^^^^^
-title:::Grand Victorian Flat in the heart of Divisadero
-url:::https://baypropertygroup.appfolio.com/listings/listings/ce60a1e8-b31c-4854-8a51-767bc58bd2f4
-price:::$4,500
-bed/bath:::
-address:::326 Divisadero Street - 326 Divisadero, San Francisco, CA 94117
-size:::3 bd / 1 ba
 *****
 slpm
-^^^^^
-title:::2 Bedroom House Near Mall and Markets (830)
-url:::https://slpm.appfolio.com/listings/listings/60442ee7-b2be-4bd7-893c-e88d502b3bd2
-price:::$1,850
-bed/bath:::2 bd / 1 ba
-address:::1955 64th ave, Oakland, CA 94621
-size:::1,089
 ^^^^^
 title:::THIS WEEKS OPEN HOUSES- click on View Details
 url:::https://slpm.appfolio.com/listings/listings/9b281c09-68ff-4299-bba0-2052c332acab
@@ -107,6 +107,20 @@ price:::$0
 bed/bath:::
 address:::575 Dutton Ave, San Leandro, CA 94577
 size:::
+^^^^^
+title:::3 Bedroom House Near High School (829)
+url:::https://slpm.appfolio.com/listings/listings/c3e08ebd-c097-49bd-9497-688a5d456c0f
+price:::$2,400
+bed/bath:::
+address:::1308 Vining Drive, San Leandro, CA 94579
+size:::3 bd / 2 ba
+^^^^^
+title:::2 Bedroom House Near Mall and Markets (830)
+url:::https://slpm.appfolio.com/listings/listings/60442ee7-b2be-4bd7-893c-e88d502b3bd2
+price:::$1,850
+bed/bath:::2 bd / 1 ba
+address:::1955 64th ave, Oakland, CA 94621
+size:::1,089
 ^^^^^
 title:::3 Bedroom Townhouse In San Lorenzo Near BART (860)
 url:::https://slpm.appfolio.com/listings/listings/378ecc88-678b-4bb6-93ef-e046e3d20c0e
@@ -128,13 +142,6 @@ price:::$1,375
 bed/bath:::1 bd / 1 ba
 address:::1255 106th Ave , Unit C, Oakland, CA 94603
 size:::775
-^^^^^
-title:::3 bedroom house in San Leandro (812)
-url:::https://slpm.appfolio.com/listings/listings/c8111ebc-ca3c-4e84-922e-4fe984d57ebc
-price:::$2,600
-bed/bath:::3 bd / 2 ba
-address:::14842 acacia st, San Leandro, CA 94579
-size:::1,096
 ^^^^^
 title:::3 Bedroom House in San Lorenzo Near High School and Gym (826)
 url:::https://slpm.appfolio.com/listings/listings/c51e87fe-81de-4599-815a-59d1cb6b47df
@@ -170,57 +177,106 @@ price:::$1,200
 bed/bath:::1 ba
 address:::1009 18th St, Oakland, CA 94609
 size:::400
-^^^^^
-title:::3 Bedroom House Near High School (829)
-url:::https://slpm.appfolio.com/listings/listings/c3e08ebd-c097-49bd-9497-688a5d456c0f
-price:::$2,400
-bed/bath:::
-address:::1308 Vining Drive, San Leandro, CA 94579
-size:::3 bd / 2 ba
-^^^^^
-title:::2 Bedroom 2 Bath Condo Near Bart (819)
-url:::https://slpm.appfolio.com/listings/listings/67cd2973-420c-4f41-aab2-08980bb21e0a
-price:::$1,900
-bed/bath:::2 bd / 2 ba
-address:::398 Parrott St , Unit 107, San Leandro, CA 94577
-size:::983
 *****
 cwp
 ^^^^^
-title:::Updated 1 Bedroom cottage with attached garage!
-url:::https://cwp.appfolio.com/listings/listings/e63c62a1-02ab-4670-8782-7dd0c83841db
-price:::$1,625
+title:::Seventy Harlan Apartments
+url:::https://cwp.appfolio.com/listings/listings/a40f2c2a-e1a5-4aa4-859e-9c0ee81c0f85
+price:::$1,450
+bed/bath:::1 ba
+address:::70 HARLAN STREET #118, San Leandro, CA 94577
+size:::500
+^^^^^
+title:::Desirable Hayward Townhome!
+url:::https://cwp.appfolio.com/listings/listings/2fb87beb-a633-481e-ba22-753767ebbb96
+price:::$1,895
+bed/bath:::2 bd / 1.5 ba
+address:::142 Sunset Boulevard, Hayward, CA 94541
+size:::1,050
+^^^^^
+title:::Stoakes Apartments
+url:::https://cwp.appfolio.com/listings/listings/46d71a29-2fd3-4ed4-8323-9dfcbb6698f2
+price:::$1,525
 bed/bath:::
-address:::1250 143rd Avenue, San Leandro, CA 94578
+address:::123 Stoakes Avenue #20, San Leandro, CA 94577
 size:::1 bd / 1 ba
 ^^^^^
-title:::Gorgeous 1 Bedroom in Downtown San Leandro
-url:::https://cwp.appfolio.com/listings/listings/8e5f1d6b-c74d-4b2e-9e9b-71c80cea6aef
-price:::$1,695
+title:::Few Blocks to BART
+url:::https://cwp.appfolio.com/listings/listings/a9e7808c-c67e-4b8a-a777-907ae9d6c70a
+price:::$1,525
+bed/bath:::
+address:::1245 Pacific Avenue #C, San Leandro, CA 94577
+size:::1 bd / 1 ba
+^^^^^
+title:::Townhome in Tranquil Setting
+url:::https://cwp.appfolio.com/listings/listings/45838c91-010e-4975-9909-ef408c8b4709
+price:::$1,895
+bed/bath:::2 bd / 1.5 ba
+address:::500 Marin Avenue #11, Hayward, CA 94541
+size:::978
+^^^^^
+title:::Ideal Location
+url:::https://cwp.appfolio.com/listings/listings/8ae2ee48-423e-4571-95e1-4312579090d0
+price:::$1,795
+bed/bath:::
+address:::976 Karol Way #4, San Leandro, CA 94577
+size:::2 bd / 1 ba
+^^^^^
+title:::Sunwood Terrace
+url:::https://cwp.appfolio.com/listings/listings/cafbece2-6692-4f6c-a1b8-ec6d56d5bc45
+price:::$1,725
 bed/bath:::1 bd / 1 ba
-address:::1812 Washington Avenue #117, San Leandro, CA 94577
-size:::632
+address:::14101 East 14th Street #102, San Leandro, CA 94578
+size:::918
 ^^^^^
-title:::Update Home on quiet alcove
-url:::https://cwp.appfolio.com/listings/listings/87208436-2556-4570-be99-a89d4085c9d8
-price:::$2,000
+title:::Tastefully Remodeled
+url:::https://cwp.appfolio.com/listings/listings/56544ea7-9c1b-42e5-8e3c-fcb91cfc8528
+price:::$2,150
+bed/bath:::
+address:::1335 C Street, Hayward, CA 94541
+size:::2 bd / 2 ba
+^^^^^
+title:::Enjoy the Benefits of Living in the Heart of Downtown
+url:::https://cwp.appfolio.com/listings/listings/a7469b8f-0aec-48e0-8afb-b2a9f8f16e45
+price:::$1,195
+bed/bath:::
+address:::963 B Street #4, Hayward, CA 94541
+size:::1 ba
+^^^^^
+title:::Easy Access to 580
+url:::https://cwp.appfolio.com/listings/listings/b687bde7-04f1-4c50-9c61-84ef198538d4
+price:::$1,495
+bed/bath:::
+address:::1737 159th Ave, San Leandro, CA 94578
+size:::1 bd / 1 ba
+^^^^^
+title:::Storybook Home
+url:::https://cwp.appfolio.com/listings/listings/998173d0-7338-4b1d-9a3d-90b51fee5a21
+price:::$3,500
+bed/bath:::4 bd / 2.5 ba
+address:::7563 Cottonwood Lane, Pleasanton, CA 94588
+size:::1,810
+^^^^^
+title:::Updated 1st Floor Unit
+url:::https://cwp.appfolio.com/listings/listings/c0a3c11f-57c4-4fc1-93c5-11d65285f53e
+price:::$1,795
+bed/bath:::
+address:::15643 Usher Street, San Lorenzo, CA 94580
+size:::2 bd / 1 ba
+^^^^^
+title:::Upper B St/Kelly Hill Neighborhood
+url:::https://cwp.appfolio.com/listings/listings/db5fe220-5d18-4cca-8851-a755a770d677
+price:::$2,550
 bed/bath:::2 bd / 1 ba
-address:::16385 Gordon Way, San Leandro, CA 94578-2228
-size:::778
+address:::22756 Lorand Way, Hayward, CA 94541
+size:::1,170
 ^^^^^
-title:::San Leandro Hills Home!
+title:::Sitting high in the San Leandro Hills
 url:::https://cwp.appfolio.com/listings/listings/dc8f3c1e-0f12-4590-8fcc-4aad8e054148
 price:::$2,550
 bed/bath:::3 bd / 1 ba
 address:::14848 Saturn Drive, San Leandro, CA 94578
 size:::925
-^^^^^
-title:::Cottage with 1 car garage!
-url:::https://cwp.appfolio.com/listings/listings/4040102b-ee5d-4139-bd02-c0d36fbaa020
-price:::$1,695
-bed/bath:::1 bd / 1 ba
-address:::1579 163rd Avenue #H, San Leandro, CA 94578
-size:::800
 ^^^^^
 title:::Country Setting
 url:::https://cwp.appfolio.com/listings/listings/4e1a5791-e38c-4d64-8b68-91d002ef9497
@@ -236,21 +292,7 @@ bed/bath:::2 bd / 1 ba
 address:::1078 Via Coralla, San Lorenzo, CA 94580
 size:::868
 ^^^^^
-title:::Studio in Historical Building
-url:::https://cwp.appfolio.com/listings/listings/4df0903e-3ef1-4cf5-bb95-b809fc1255de
-price:::$1,225
-bed/bath:::
-address:::22284 Mission Boulevard #2, Hayward, CA 94541
-size:::1 ba
-^^^^^
-title:::Great Newark Apartment Home
-url:::https://cwp.appfolio.com/listings/listings/90259e4c-ab32-4c4b-9cb1-0242543b8929
-price:::$1,850
-bed/bath:::2 bd / 1 ba
-address:::5366 Saint Mark Avenue #34, Newark, CA 94560
-size:::725
-^^^^^
-title:::Spacious 2 Bedroom in Downtown San Leandro
+title:::Open House Friday 5 - 8pm
 url:::https://cwp.appfolio.com/listings/listings/406047e2-672e-455b-ae36-c9a5caa3c366
 price:::$1,950
 bed/bath:::2 bd / 1 ba
@@ -264,60 +306,32 @@ bed/bath:::4 bd / 3 ba
 address:::654 Elderberry Way, San Leandro, CA 94578
 size:::2,477
 ^^^^^
-title:::Apartment Home to Condominium Standards (Quality)
-url:::https://cwp.appfolio.com/listings/listings/a36c778f-58f5-4469-8a5b-022ff26b3e7b
-price:::$1,995
-bed/bath:::2 bd / 1 ba
-address:::70 HARLAN STREET #308, San Leandro, CA 94577
-size:::880
-^^^^^
-title:::Marina Vista
+title:::Gorgeous Two-Story Home
 url:::https://cwp.appfolio.com/listings/listings/99d2285a-456e-47de-be7f-cc432580b49f
 price:::$3,600
 bed/bath:::5 bd / 4 ba
 address:::15190 Shining Star Lane, San Leandro, CA 94579
 size:::2,968
 ^^^^^
-title:::Completely Remodeled 3 Bed 2 Bath across from Cal State East Bay
-url:::https://cwp.appfolio.com/listings/listings/208ad3c8-b0a4-4932-828e-d4d3e774b24a
-price:::$2,895
-bed/bath:::
-address:::25836 Hayward Blvd #202, Hayward, CA 94542-1680
-size:::3 bd / 2 ba
-^^^^^
 title:::Cedar Apartments
 url:::https://cwp.appfolio.com/listings/listings/381e2573-4dc7-4b5b-bab1-93fc5e800c24
-price:::$2,195
+price:::$2,095
 bed/bath:::
 address:::37711 Fremont Blvd #27, Fremont, CA 94536
 size:::2 bd / 1 ba
 ^^^^^
-title:::Marina Apartments
+title:::Open House Saturday 9am - 12 noon
 url:::https://cwp.appfolio.com/listings/listings/bc8669c4-72a4-4f35-88f8-94ae75a57729
-price:::$2,095
+price:::$1,995
 bed/bath:::2 bd / 1.5 ba
 address:::2265 MARINA Blvd #1, San Leandro, CA 94577
 size:::864
-^^^^^
-title:::Updated Upper Unit Conveniently Located Close to 580/880!
-url:::https://cwp.appfolio.com/listings/listings/017fdac5-045e-45a8-8cd0-0ff904d041e1
-price:::$1,795
-bed/bath:::
-address:::16294 Foothill Blvd, San Leandro, CA 94578
-size:::2 bd / 1 ba
 ^^^^^
 title:::Desirable Castro Valley Location w/garage!
 url:::https://cwp.appfolio.com/listings/listings/15e269d9-4b76-4303-9eea-ae184c3e9f9b
 price:::$1,895
 bed/bath:::
 address:::20259 Anita Avenue #4, Castro Valley, CA 94546
-size:::2 bd / 1 ba
-^^^^^
-title:::Updated 1st Floor Unit
-url:::https://cwp.appfolio.com/listings/listings/c0a3c11f-57c4-4fc1-93c5-11d65285f53e
-price:::$1,795
-bed/bath:::
-address:::15643 Usher Street, San Lorenzo, CA 94580
 size:::2 bd / 1 ba
 ^^^^^
 title:::Prime Downtown Hayward Location!
@@ -327,26 +341,12 @@ bed/bath:::2 ba
 address:::971 B Street, Hayward, CA 94541
 size:::1,984
 ^^^^^
-title:::Your Own Private Retreat
-url:::https://cwp.appfolio.com/listings/listings/3ad3aaa1-0c44-4530-b272-612e07ac90c6
-price:::$2,495
-bed/bath:::
-address:::1798 B Street, Hayward, CA 94541
-size:::2 bd / 2 ba
-^^^^^
 title:::Seventy Harlan Apartments
 url:::https://cwp.appfolio.com/listings/listings/3408ad89-b95e-4828-bb97-59693a1f5460
 price:::$1,995
 bed/bath:::2 bd / 1 ba
 address:::70 HARLAN STREET *, San Leandro, CA 94577
 size:::880
-^^^^^
-title:::Downtown San Leandro Location w/1 car garage!
-url:::https://cwp.appfolio.com/listings/listings/17527140-c920-4818-b8f7-da8ebee90e7c
-price:::$1,795
-bed/bath:::
-address:::1253 Pacific Avenue #C, San Leandro, CA 94577
-size:::2 bd / 1 ba
 ^^^^^
 title:::Lorenzo Dell
 url:::https://cwp.appfolio.com/listings/listings/817c71c1-9ee0-4c21-b8f9-c347b99411df
@@ -364,25 +364,32 @@ size:::627
 *****
 crpm
 ^^^^^
-title:::Make This Condo A Place You Can Call Home!! COMING SOON!!
-url:::https://communityrealtypm.appfolio.com/listings/listings/30d1aa7d-ff48-495f-b8cf-f177d2db5675
-price:::$2,000
-bed/bath:::1 bd / 1 ba
-address:::250 Whitmore St. #108, Oakland, CA 94611
-size:::757
+title:::Very Nice 2 Bed 1 Bath Coming Soon!!!
+url:::https://communityrealtypm.appfolio.com/listings/listings/a4e06669-e206-44f8-ba0e-f6be0f8b8cd2
+price:::$2,400
+bed/bath:::
+address:::11141 Acalanes Dr, , Oakland, CA 94603
+size:::2 bd / 1 ba
+^^^^^
+title:::Cute 1 Bedroom unit coming soon!
+url:::https://communityrealtypm.appfolio.com/listings/listings/06aa3e07-ffe2-4694-9814-51e375e8f22a
+price:::$1,400
+bed/bath:::
+address:::1728 Auseon Ave - 1728-Rear, Oakland, CA 94621
+size:::1 bd / 1 ba
+^^^^^
+title:::Cozy 1 Bedroom coming soon!
+url:::https://communityrealtypm.appfolio.com/listings/listings/0db29490-f77c-402c-81be-dbd1f3128ebc
+price:::$1,200
+bed/bath:::
+address:::7832 E. 14th Street #A, Oakland, CA 94621
+size:::1 bd / 1 ba
 ^^^^^
 title:::COMING SOON Nice 1 Bedroom & 1 bathroom
 url:::https://communityrealtypm.appfolio.com/listings/listings/5449e783-c476-4e9a-86a5-91e20d9a45c6
 price:::$1,350
 bed/bath:::
 address:::471 36th St., Oakland, CA 94609
-size:::1 bd / 1 ba
-^^^^^
-title:::1 bedroom 1 bath apartment in gated building
-url:::https://communityrealtypm.appfolio.com/listings/listings/02d2b21b-bbf6-4aa5-8275-701d5fbfcce0
-price:::$1,200
-bed/bath:::
-address:::456 20th St. # D, Richmond, CA 94801
 size:::1 bd / 1 ba
 ^^^^^
 title:::Coming Soon! 2 bedroom Oakland apartment on 83rd Ave
@@ -427,13 +434,6 @@ bed/bath:::2 bd / 1 ba
 address:::1394 B St., Hayward, CA 94541
 size:::1,353
 ^^^^^
-title:::Nice Cute House Coming Soon!!!!
-url:::https://communityrealtypm.appfolio.com/listings/listings/47df33bf-86b5-4de1-90bf-62ae722ac09d
-price:::$2,800
-bed/bath:::3 bd
-address:::2745 Bartlett St, Oakland, CA 94602
-size:::1,200
-^^^^^
 title:::Commercial space, office, retail store, beauty/ barber shop
 url:::https://communityrealtypm.appfolio.com/listings/listings/ca795905-2074-4411-a2d9-c2379584decb
 price:::$850
@@ -441,33 +441,12 @@ bed/bath:::
 address:::704 Ohio St. , Vallejo, CA 94590
 size:::
 ^^^^^
-title:::Cute 1 Bedroom unit coming soon!
-url:::https://communityrealtypm.appfolio.com/listings/listings/06aa3e07-ffe2-4694-9814-51e375e8f22a
-price:::$1,400
-bed/bath:::
-address:::1728 Auseon Ave - 1728-Rear, Oakland, CA 94621
-size:::1 bd / 1 ba
-^^^^^
 title:::COMING SOON!! Beautiful updated 3 br, 2 bath unit.
 url:::https://communityrealtypm.appfolio.com/listings/listings/318dcd72-6e92-439e-b8f0-d06afe80b40b
 price:::$2,200
 bed/bath:::
 address:::3434 California Street , Oakland, CA 94602
 size:::3 bd / 2 ba
-^^^^^
-title:::Cozy 1 Bedroom coming soon!
-url:::https://communityrealtypm.appfolio.com/listings/listings/0db29490-f77c-402c-81be-dbd1f3128ebc
-price:::$1,200
-bed/bath:::
-address:::7832 E. 14th Street #A, Oakland, CA 94621
-size:::1 bd / 1 ba
-^^^^^
-title:::1 bed 1 bath downstairs unit
-url:::https://communityrealtypm.appfolio.com/listings/listings/9d6dc670-4020-4d64-b154-8789c855bfaa
-price:::$1,000
-bed/bath:::
-address:::112 Byron St., , Vallejo, CA 94590
-size:::1 bd / 1 ba
 ^^^^^
 title:::Coming Soon. 3 Bed 1 Bath house off Mission Blvd in Hayward.
 url:::https://communityrealtypm.appfolio.com/listings/listings/5022aac5-4b2f-4d2e-8fbb-937fc3e86a74
@@ -499,12 +478,54 @@ size:::2,335
 *****
 advent
 ^^^^^
+title:::Advent- Newly remodeled studio with an abundance of natural light!
+url:::https://adventproperties.appfolio.com/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c
+price:::$1,645
+bed/bath:::1 ba
+address:::381 Oakland Avenue - 37, Oakland, CA 94611
+size:::500
+^^^^^
+title:::Advent- Amazing South of Market apartment home available now!
+url:::https://adventproperties.appfolio.com/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92
+price:::$3,595
+bed/bath:::2 bd / 1 ba
+address:::54-64 Sumner Street - 56, San Francisco, CA 94103
+size:::720
+^^^^^
+title:::Advent- Grand Lake Neighborhood home available now!
+url:::https://adventproperties.appfolio.com/listings/listings/84aa1f94-a324-46ac-b9cd-9e7af0670c02
+price:::$4,095
+bed/bath:::2 bd / 2 ba
+address:::400 Sunnyslope Ave, Oakland, CA 94608
+size:::1,448
+^^^^^
 title:::Advent- Spacious lower apartment home available!
 url:::https://adventproperties.appfolio.com/listings/listings/406ebbbd-2318-4116-a6a0-7262091c695c
 price:::$1,695
 bed/bath:::2 bd / 1 ba
 address:::7448 Lockwood Street  - A, Oakland, CA 94621
 size:::884
+^^^^^
+title:::Advent- The loft you have been waiting for!
+url:::https://adventproperties.appfolio.com/listings/listings/6e4df93e-e102-4d88-a605-f9ba7af03f0a
+price:::$3,395
+bed/bath:::1 bd / 1 ba
+address:::2932 Filbert St. #6, Oakland, CA 94608
+size:::1,035
+^^^^^
+title:::Advent- Industrial Chic Two Bedroom Plus Den at The Bond
+url:::https://adventproperties.appfolio.com/listings/listings/b3b86f78-8f4b-4896-9a0b-511e11c6c8bd
+price:::$3,795
+bed/bath:::2 bd / 2 ba
+address:::311 2nd St., #410, Oakland, CA 94607
+size:::1,300
+^^^^^
+title:::Advent- Adams Point Condo with garage parking Available now!
+url:::https://adventproperties.appfolio.com/listings/listings/02173d04-a828-4e45-b4a5-8ee5bca7a38a
+price:::$2,495
+bed/bath:::1 bd / 1 ba
+address:::325 Lenox Ave Unit 9, Oakland, CA 94610
+size:::697
 ^^^^^
 title:::Advent- Top Floor home with vaulted ceilings available!
 url:::https://adventproperties.appfolio.com/listings/listings/e9658c15-73df-4b1d-992b-28701cd7d755
@@ -527,34 +548,6 @@ bed/bath:::2 bd / 1.5 ba
 address:::1817 Marin Way - 1, Oakland, CA 94606
 size:::700
 ^^^^^
-title:::Advent- Spacious and bright upper floor apartment available!
-url:::https://adventproperties.appfolio.com/listings/listings/dbbf3f1b-4620-4049-ac50-525d7bd8b9bb
-price:::$1,395
-bed/bath:::1 bd / 1 ba
-address:::2622 East 25th Street - 2622, Oakland, CA 94601
-size:::650
-^^^^^
-title:::Advent- Gorgeous top floor apartment Near Piedmont/Grand Lake Neighborhood!
-url:::https://adventproperties.appfolio.com/listings/listings/089bba00-184a-4ea8-ae6b-b21e132f1202
-price:::$1,895
-bed/bath:::1 ba
-address:::491 Fairbanks Ave - 3, Oakland, CA 94610
-size:::575
-^^^^^
-title:::Advent - Redwood Heights amazing home with Expansive Main Bedroom En Suite!
-url:::https://adventproperties.appfolio.com/listings/listings/dabcae57-d174-45c2-92b0-f850482e3d71
-price:::$3,595
-bed/bath:::3 bd / 2.5 ba
-address:::3715 Harbor View Avenue, Oakland, CA 94619
-size:::1,231
-^^^^^
-title:::Advent- Enormous Redwood Heights home available!
-url:::https://adventproperties.appfolio.com/listings/listings/d60274e2-f436-44f7-ab57-bcd44dad06eb
-price:::$3,595
-bed/bath:::3 bd / 2.5 ba
-address:::4760 Davenport Ave. , Oakland, CA 94619
-size:::1,966
-^^^^^
 title:::Advent- Custom designed South Berkeley town home available!
 url:::https://adventproperties.appfolio.com/listings/listings/ab180c88-280b-4e61-9034-67e03a1b6c93
 price:::$3,695
@@ -562,54 +555,12 @@ bed/bath:::3 bd / 3 ba
 address:::1418A Harmon St., Berkeley, CA 94702
 size:::1,257
 ^^^^^
-title:::Advent- Luxury Town home available in the Prescott neighborhood!
-url:::https://adventproperties.appfolio.com/listings/listings/1f00b775-90bf-4d56-a196-06a35a5333b2
-price:::$2,695
-bed/bath:::2 bd / 2.5 ba
-address:::902 Zephyr Drive, Oakland, CA 94607
-size:::987
-^^^^^
 title:::Advent- Kelton community luxury condo available!
 url:::https://adventproperties.appfolio.com/listings/listings/d42fcc9a-ac36-4335-97d7-918c58cf54ae
 price:::$2,495
 bed/bath:::1 bd / 1 ba
 address:::1 Kelton Court #9L, Oakland, CA 94611
 size:::720
-^^^^^
-title:::Advent- Vibrant and Hip Mission district condo available with parking!
-url:::https://adventproperties.appfolio.com/listings/listings/6b3ee259-c380-4c1b-9790-aaf15d966d23
-price:::$6,795
-bed/bath:::4 bd / 3 ba
-address:::2171 Mission Street , #402, San Francisco, CA 94110
-size:::1,620
-^^^^^
-title:::Advent- Updated Merced Heights Home With Garage and Sun Porch!
-url:::https://adventproperties.appfolio.com/listings/listings/0fb5362a-f7af-4363-9a29-12eb8932aaa1
-price:::$5,695
-bed/bath:::4 bd / 2 ba
-address:::375 Vernon St, San Francisco, CA 94131
-size:::2,000
-^^^^^
-title:::Advent- Contemporary community with dedicated parking available!
-url:::https://adventproperties.appfolio.com/listings/listings/fab0fb51-9cff-4324-8d22-32f498d86eef
-price:::$3,595
-bed/bath:::2 bd / 2.5 ba
-address:::6466 Hollis St. Unit 321, Emeryville, CA 94608
-size:::1,458
-^^^^^
-title:::Advent- Amazing South of Market apartment home available now!
-url:::https://adventproperties.appfolio.com/listings/listings/b351f6df-43c4-4bb9-ade5-f6a158b11e92
-price:::$3,795
-bed/bath:::2 bd / 1 ba
-address:::54-64 Sumner Street - 56, San Francisco, CA 94103
-size:::720
-^^^^^
-title:::Advent- Newly remodeled studio with an abundance of natural light!
-url:::https://adventproperties.appfolio.com/listings/listings/edf8c633-1177-49cf-81d4-42c6c7c5647c
-price:::$1,695
-bed/bath:::1 ba
-address:::381 Oakland Avenue - 37, Oakland, CA 94611
-size:::500
 *****
 openworld
 ^^^^^
@@ -620,7 +571,121 @@ bed/bath:::
 address:::1236 37th Avenue - Unit 4, Oakland, CA 94601
 size:::1 bd / 1 ba
 *****
+sg
+^^^^^
+title:::Beautiful 1Bed with Hardwoodd Floors an Storage
+url:::https://sgrealestate.appfolio.com/listings/listings/c708bc72-1447-425e-b6ec-41875f40282c
+price:::$2,095
+bed/bath:::
+address:::1425 Harrison Street - 330, Oakland, CA 94612
+size:::1 bd / 1 ba
+^^^^^
+title:::Large Studio with Hardwood Floors and Custom Built-Ins
+url:::https://sgrealestate.appfolio.com/listings/listings/ea9a7293-43eb-4f66-af63-82bf55647252
+price:::$1,695
+bed/bath:::
+address:::1425 Harrison Street - 328, Oakland, CA 94612
+size:::1 ba
+^^^^^
+title:::Large Studio with Hardwood Floors and Custom Built-Ins
+url:::https://sgrealestate.appfolio.com/listings/listings/691fc4a1-9b97-416f-93f0-ebe2a03b325a
+price:::$1,595
+bed/bath:::
+address:::1425 Harrison Street - 224, Oakland, CA 94612
+size:::1 ba
+^^^^^
+title:::$1,000 Security Deposits for 3Bd/2Ba in Brand New Construction Building!
+url:::https://sgrealestate.appfolio.com/listings/listings/226afa9d-7793-41f0-b82e-8f43f7bb078d
+price:::$3,595
+bed/bath:::2 bd / 1 ba
+address:::1901 Dwight Way - 301, Berkeley, CA 94704
+size:::864
+^^^^^
+title:::Coming Soon 2Bedroom Quiet Retreat on Bustling Telegraph Ave.
+url:::https://sgrealestate.appfolio.com/listings/listings/24679cea-891a-437b-b5ba-0d2e1cc1f8fe
+price:::$2,995
+bed/bath:::
+address:::3105 Telegraph Ave, Apt 2, Berkeley, CA 94705
+size:::2 bd / 1 ba
+^^^^^
+title:::Spacious 2 bdrm/2ba unit with Washer Dryer in Unit
+url:::https://sgrealestate.appfolio.com/listings/listings/fb223520-548a-4554-861c-47475e08f1a0
+price:::$3,550
+bed/bath:::2 bd / 1 ba
+address:::1901 Dwight Way - 304, Berkeley, CA 94704
+size:::793
+^^^^^
+title:::Ground Floor Retail on Busy MLK Jr. Way
+url:::https://sgrealestate.appfolio.com/listings/listings/348be2bb-f16c-4bef-bec2-73530a084892
+price:::$1,295
+bed/bath:::
+address:::1947 MLK Jr Way, Berkeley, CA 94704
+size:::
+^^^^^
+title:::Coming Soon-2BD/1BA On Tree Lined North Berkeley Street
+url:::https://sgrealestate.appfolio.com/listings/listings/ab60049c-e8f2-4ae2-8578-cc25f8e0904d
+price:::$2,395
+bed/bath:::
+address:::1301 Hearst Avenue, Apt 10, Berkeley, CA 94702
+size:::2 bd / 1 ba
+^^^^^
+title:::Pre-Lease Brand New Construction on University Avenue
+url:::https://sgrealestate.appfolio.com/listings/listings/12ac7113-a712-4e2b-98f4-f857513bcbf7
+price:::$2,155
+bed/bath:::1 ba
+address:::1812 University Avenue - 206, Berkeley, CA 94703
+size:::420
+^^^^^
+title:::Pre-Lease 1Bedroom Brand New Construction On University Avenue
+url:::https://sgrealestate.appfolio.com/listings/listings/dbd9318f-31df-4638-91d6-10eeebf8e3de
+price:::$2,795
+bed/bath:::1 bd / 1 ba
+address:::1812 University Avenue - 102, Berkeley, CA 94703
+size:::640
+^^^^^
+title:::Pre-Lease Brand New Construction on University Avenue
+url:::https://sgrealestate.appfolio.com/listings/listings/629389ff-dea1-40dc-9d12-892567979226
+price:::$3,795
+bed/bath:::2 bd / 1 ba
+address:::1812 University Avenue - 101, Berkeley, CA 94703
+size:::750
+^^^^^
+title:::2Bd Penthouse w/ a Deck and lots of sunlight - Ready Now!
+url:::https://sgrealestate.appfolio.com/listings/listings/ea644419-d74f-4fe7-b60f-6f28a4a0794f
+price:::$4,495
+bed/bath:::2 bd / 1 ba
+address:::1901 Dwight Street, Berkeley, CA 94704
+size:::853
+^^^^^
+title:::Use This Application for Pre-Screening or Adding Roommates
+url:::https://sgrealestate.appfolio.com/listings/listings/addac141-6062-4795-874a-1e923169185a
+price:::$0
+bed/bath:::
+address:::SG Real Estate Application, Berkeley, CA 94709
+size:::
+^^^^^
+title:::For Lease: Gourmet Ghetto Retail/Office
+url:::https://sgrealestate.appfolio.com/listings/listings/42e45921-ce01-48d8-879f-743035754395
+price:::$5,000
+bed/bath:::$4.00 /mo
+address:::1625 Shattuck Avenue - Suite 102 , Berkeley, CA 94709
+size:::1,250
+^^^^^
+title:::Small Downtown Berkeley Office (approved for Medical Uses)
+url:::https://sgrealestate.appfolio.com/listings/listings/5a2c5474-d9c7-4751-8bdc-5317c80baf9e
+price:::$1,495
+bed/bath:::$2.99 /mo
+address:::64 Shattuck Square, Suite 212, Berkeley, CA 94704
+size:::500
+*****
 msb
+^^^^^
+title:::Lovely Fremont Mission Home
+url:::https://msbpropertymanagement.appfolio.com/listings/listings/fb61a0d1-c4e3-446d-af5d-7aeb047fca66
+price:::$4,500
+bed/bath:::4 bd / 2 ba
+address:::38774 Altura St, Fremont, CA 94536
+size:::1,822
 ^^^^^
 title:::No Title
 url:::https://msbpropertymanagement.appfolio.com/listings/listings/28d66998-9f64-467e-9dff-d4d56590f47c
@@ -628,13 +693,6 @@ price:::$1,595
 bed/bath:::1 ba
 address:::1649 Martin Luther King Jr. Way, 2, Berkeley, CA 94709
 size:::437
-^^^^^
-title:::No Title
-url:::https://msbpropertymanagement.appfolio.com/listings/listings/649b3f54-278c-49d9-9fc4-8610764ccfa6
-price:::$2,250
-bed/bath:::2 bd / 1 ba
-address:::3138 Ellis St, A, Berkeley, CA 94703
-size:::700
 ^^^^^
 title:::No Title
 url:::https://msbpropertymanagement.appfolio.com/listings/listings/9a70e782-567d-4cda-a196-4e823cd15822
@@ -645,110 +703,33 @@ size:::700
 *****
 discovery
 ^^^^^
-title:::4 Bedroom Mid-Century Oakmore Property With View of Bay Available for Lease June 1st!
-url:::https://discovery.appfolio.com/listings/listings/3f5e1aa3-94f8-47d5-9343-7cc4a68012f6
-price:::$4,300
-bed/bath:::4 bd / 2 ba
-address:::1707 Leimert Blvd., Oakland, CA 94602
-size:::2,160
-^^^^^
-title:::Traditional Crocker Highland 3 Bedroom Now Available!
-url:::https://discovery.appfolio.com/listings/listings/355b7c26-799a-41de-b3cc-40d7a0edb0d8
-price:::$4,600
-bed/bath:::3 bd / 2 ba
-address:::20 Bowles Pl. , Oakland, CA 94610
-size:::1,675
-^^^^^
-title:::Mid-Century 2 Bedroom Apartment in San Leandro Available Soon!
-url:::https://discovery.appfolio.com/listings/listings/137614a0-7e87-486c-a04c-d4b6f5b7b188
-price:::$1,800
-bed/bath:::2 bd / 1.5 ba
-address:::562 Bancroft Ave - J, San Leandro, CA 94577
-size:::1,000
-^^^^^
-title:::Brand New Lumina Jr. 1 Bed / 1 Bath  RENTED!
-url:::https://discovery.appfolio.com/listings/listings/44bcccf0-318a-4ca4-8c02-61e89cdb5eb1
-price:::$3,950
+title:::Upper Grand Avenue One Bedroom Medieval Style Building Coming Soon!
+url:::https://discovery.appfolio.com/listings/listings/12a0bf8b-1de0-47ad-82cd-088ecc573a0b
+price:::$2,200
 bed/bath:::1 bd / 1 ba
-address:::333 Beale Street, Plaza C, Unit 2D, San Francisco, CA 94105
-size:::955
+address:::824 Erie St. - #10, Oakland, CA 94610
+size:::900
 ^^^^^
-title:::Studio Unit at The Essex on Lake Merritt Rented Before Advertised!
-url:::https://discovery.appfolio.com/listings/listings/118838f3-4b9c-4edd-b76e-28d3e84e9b26
-price:::$0
-bed/bath:::1 ba
-address:::1 Lakeside Dr. #816, Oakland, CA 94612
-size:::500
-^^^^^
-title:::Coveted Spanish 5+ Bedroom Piedmont Home With SF Bay Views!  RENTED!
-url:::https://discovery.appfolio.com/listings/listings/f2902e33-5f00-4c88-ab9a-ad67169905e1
-price:::$7,300
-bed/bath:::5 bd / 3.5 ba
-address:::211 Scenic Ave. , Piedmont, CA 94611
-size:::3,210
-^^^^^
-title:::Striking Quintessential North Berkeley Craftsman Rented in Advance of Listing!
-url:::https://discovery.appfolio.com/listings/listings/ca2acb10-18dc-4d71-ac00-836b3a1455de
-price:::$4,800
-bed/bath:::3 bd / 2.5 ba
-address:::1170 Oxford St., Berkeley, CA 94707
-size:::1,836
-^^^^^
-title:::Castro Valley Home Near Lake Chabot Now Available for Lease!
-url:::https://discovery.appfolio.com/listings/listings/de1b002d-6ce8-4220-a592-8191578a7566
-price:::$3,400
-bed/bath:::
-address:::18840 Almond Rd. , Castro Valley, CA 94546
-size:::3 bd / 2 ba
-^^^^^
-title:::4 Bedroom 2.5 Bath Claremont Home With Sun Filled Rooms and Wonderful Views!
-url:::https://discovery.appfolio.com/listings/listings/05f0bc94-d66e-4acf-8308-c4043ea65398
-price:::$6,200
-bed/bath:::4 bd / 2.5 ba
-address:::47 Domingo Ave. , Berkeley, CA 94705
-size:::2,642
-^^^^^
-title:::Classic Mid-Century Art Moderne Home in Montclair District of Oakland May 1st!
-url:::https://discovery.appfolio.com/listings/listings/28bd1d29-6096-4ef9-8722-695308ff5adb
-price:::$6,500
-bed/bath:::5 bd / 4 ba
-address:::1831 Drake Drive, Oakland, CA 94611
-size:::3,051
-^^^^^
-title:::Charming 2 Bedroom Cape Cod Apartment in Glenview Available For Lease June 1st!
-url:::https://discovery.appfolio.com/listings/listings/3bc37652-1054-4e4c-9c59-430a38868965
-price:::$3,450
-bed/bath:::2 bd / 2 ba
-address:::1028 Hollywood Avenue - 1028, Oakland, CA 94602
-size:::1,000
-^^^^^
-title:::North Berkeley Rustic 3 Bedroom Fully Furnished Short Term August 1-June 30th!
-url:::https://discovery.appfolio.com/listings/listings/b5a7705c-1dde-4290-8c49-4c9bab117992
-price:::$3,900
-bed/bath:::3 bd / 1.5 ba
-address:::15 Tamalpais Rd., Berkeley, CA 94708
-size:::1,700
-^^^^^
-title:::Piedmont Pines English Tudor Revival Ready for Immediate Lease
-url:::https://discovery.appfolio.com/listings/listings/881db30f-8194-4609-94d0-e31917dad385
-price:::$5,200
-bed/bath:::3 bd / 4 ba
-address:::6533 Castle Dr. , Oakland, CA 94611
-size:::3,027
-^^^^^
-title:::East Lake 1 Bedroom in Victorian Triplex Available Now!
-url:::https://discovery.appfolio.com/listings/listings/f11f1e75-548f-4a45-8496-c0e3caf5ce0b
-price:::$1,825
-bed/bath:::
-address:::430 International Blvd. , Oakland, CA 94606
-size:::1 bd / 1 ba
-^^^^^
-title:::Oakland Hills Mid-Century Modern 4 Bedroom 3.5 Bathrooms Now Available!
-url:::https://discovery.appfolio.com/listings/listings/bb2ab75d-5c22-46d3-9eaf-b4bee01d852c
-price:::$5,900
+title:::Oakmore Charming Mid-Century Modern 4 bedroom Now Available!
+url:::https://discovery.appfolio.com/listings/listings/321ab6db-27da-4b4d-ab5c-9eaca145411b
+price:::$6,300
 bed/bath:::4 bd / 3.5 ba
-address:::5798 Balmoral Drive, Oakland, CA 94619
-size:::3,950
+address:::2049 Bywood Drive, Oakland, CA 94602
+size:::2,385
+^^^^^
+title:::SOMA 2 Bedroom Condominium Top Floor Now Available!
+url:::https://discovery.appfolio.com/listings/listings/229b2e87-c6d0-4585-80fd-0cab2697a052
+price:::$3,395
+bed/bath:::2 bd / 1 ba
+address:::39 Moss St. #A, San Francisco, CA 94103
+size:::690
+^^^^^
+title:::Contemporary Montclair 4 Bedroom 2 Bathroom Available Now!
+url:::https://discovery.appfolio.com/listings/listings/a92bce01-38bb-440d-a0fa-c8089c62a756
+price:::$4,500
+bed/bath:::4 bd / 2 ba
+address:::6833 Snake Road, Oakland, CA 94611
+size:::1,815
 ^^^^^
 title:::Charming Elmwood-Claremont One Bedroom Cottage Now Available!
 url:::https://discovery.appfolio.com/listings/listings/f9529168-5c7d-4c4a-a5a1-5a4a814f451b
@@ -757,9 +738,72 @@ bed/bath:::1 bd / 1 ba
 address:::2947 Pine Avenue - 2947A, Berkeley, CA 94705
 size:::700
 ^^^^^
-title:::Albany Contemporary 2 Bedroom Condominium Now Available!
-url:::https://discovery.appfolio.com/listings/listings/5bc98be7-1bce-40ed-be4f-92e41bede34b
-price:::$3,200
-bed/bath:::2 bd / 2 ba
-address:::545 Pierce Street, Unit 2106, Albany, CA 94706
-size:::1,234
+title:::Prime Elmwood 4 Plus Bedrooms 3.5 Bathrooms Craftman's Now Available!
+url:::https://discovery.appfolio.com/listings/listings/44b20043-76b8-40a1-a720-a8fd26c246af
+price:::$7,500
+bed/bath:::3 bd / 3.5 ba
+address:::2830 Garber Street, Berkeley, CA 94705
+size:::3,200
+^^^^^
+title:::Oakland Hills Mid-Century Modern 4 Bedroom 3.5 Bathrooms Pending!
+url:::https://discovery.appfolio.com/listings/listings/bb2ab75d-5c22-46d3-9eaf-b4bee01d852c
+price:::$5,900
+bed/bath:::4 bd / 3.5 ba
+address:::5798 Balmoral Drive, Oakland, CA 94619
+size:::3,950
+^^^^^
+title:::Charming Elmwood-Claremont Two Bedroom Available Soon!
+url:::https://discovery.appfolio.com/listings/listings/7a7cd7f0-d08b-4727-aa39-bb2ee2adc6af
+price:::$3,600
+bed/bath:::2 bd / 1 ba
+address:::2947 Pine Avenue - 2947, Berkeley, CA 94705
+size:::1,100
+^^^^^
+title:::North Berkeley Rustic 3 Bedroom Fully Furnished Short Term August 1-June 30th!
+url:::https://discovery.appfolio.com/listings/listings/b5a7705c-1dde-4290-8c49-4c9bab117992
+price:::$3,900
+bed/bath:::3 bd / 1.5 ba
+address:::15 Tamalpais Rd., Berkeley, CA 94708
+size:::1,700
+^^^^^
+title:::4 Bedroom Mid-Century Oakmore Property With View of Bay Available for Lease June 1st!
+url:::https://discovery.appfolio.com/listings/listings/3f5e1aa3-94f8-47d5-9343-7cc4a68012f6
+price:::$4,300
+bed/bath:::4 bd / 2 ba
+address:::1707 Leimert Blvd., Oakland, CA 94602
+size:::2,160
+^^^^^
+title:::4 Bedroom 2.5 Bath Claremont Home With Sun Filled Rooms and Wonderful Views!
+url:::https://discovery.appfolio.com/listings/listings/05f0bc94-d66e-4acf-8308-c4043ea65398
+price:::$6,200
+bed/bath:::4 bd / 2.5 ba
+address:::47 Domingo Ave. , Berkeley, CA 94705
+size:::2,642
+^^^^^
+title:::Traditional Crocker Highland 3 Bedroom Now Available!
+url:::https://discovery.appfolio.com/listings/listings/355b7c26-799a-41de-b3cc-40d7a0edb0d8
+price:::$4,600
+bed/bath:::3 bd / 2 ba
+address:::20 Bowles Pl. , Oakland, CA 94610
+size:::1,675
+^^^^^
+title:::Castro Valley Home Near Lake Chabot Now Available for Lease!
+url:::https://discovery.appfolio.com/listings/listings/de1b002d-6ce8-4220-a592-8191578a7566
+price:::$3,400
+bed/bath:::
+address:::18840 Almond Rd. , Castro Valley, CA 94546
+size:::3 bd / 2 ba
+^^^^^
+title:::Classic Mid-Century Art Moderne Home in Montclair District of Oakland May 1st!
+url:::https://discovery.appfolio.com/listings/listings/28bd1d29-6096-4ef9-8722-695308ff5adb
+price:::$6,500
+bed/bath:::5 bd / 4 ba
+address:::1831 Drake Drive, Oakland, CA 94611
+size:::3,051
+^^^^^
+title:::Piedmont Pines English Tudor Revival Ready for Immediate Lease
+url:::https://discovery.appfolio.com/listings/listings/881db30f-8194-4609-94d0-e31917dad385
+price:::$5,200
+bed/bath:::3 bd / 4 ba
+address:::6533 Castle Dr. , Oakland, CA 94611
+size:::3,027

@@ -38,3 +38,8 @@ msb:
     base: https://msbpropertymanagement.appfolio.com
     parser: advent
     javascript: True
+sg:
+    url: https://sgrealestate.appfolio.com/listings/?1464738450587
+    base: https://sgrealestate.appfolio.com
+    parser: advent
+    javascript: True
