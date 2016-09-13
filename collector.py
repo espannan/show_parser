@@ -55,7 +55,7 @@ class Collector(object):
             for content in contents:
                 log_message.append(self.item_divider)
                 for category, info in content.items():
-                    log_message.append('%s%s%s' % (category, self.title_divider, info))
+                    log_message.append('%s%s%s' % (category, self.title_divider, info.encode('utf-8')))
         f.write('\n'.join(log_message))
         f.close()
 
@@ -68,7 +68,7 @@ class Collector(object):
             headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30'}
             if self.debug:
                 f = open('debug_sites/' + site + '.html', 'r')
-                page = f.read()
+                page = f.read().encode('utf-8')
             elif info['javascript']:
                 page = self.get_loaded_page(info['url'])
             else:

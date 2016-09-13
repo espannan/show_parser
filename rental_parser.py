@@ -29,5 +29,5 @@ collector.write_log(agency_listings, 'rentals')
 rendered_page = template.render(agency_listings=agency_listings)
 
 f = open('rentals.html', 'w')
-f.write(rendered_page)
+f.write(rendered_page.encode('utf-8'))
 f.close()
