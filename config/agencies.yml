@@ -1,45 +1,45 @@
 advent:
-    url: https://adventproperties.appfolio.com/listings/?1463542934435
+    url: https://adventproperties.appfolio.com/listings
     base: https://adventproperties.appfolio.com
     parser: advent
     javascript: True
 slpm:
-    url: https://slpm.appfolio.com/listings?1408551123197
+    url: https://slpm.appfolio.com/listings
     base: https://slpm.appfolio.com
     parser: advent
     javascript: True
 crpm:
-    url: https://communityrealtypm.appfolio.com/listings/?1463635612438
+    url: https://communityrealtypm.appfolio.com/listings
     base: https://communityrealtypm.appfolio.com
     parser: advent
     javascript: True
 bay_property_group:
-    url: https://baypropertygroup.appfolio.com/listings/?1463636254783
+    url: https://baypropertygroup.appfolio.com/listings
     base: https://baypropertygroup.appfolio.com
     parser: advent
     javascript: True
 discovery:
-    url: https://discovery.appfolio.com/listings/?1463637442457
+    url: https://discovery.appfolio.com/listings
     base: https://discovery.appfolio.com
     parser: advent
     javascript: True
 cwp:
-    url: https://cwp.appfolio.com/listings/?1463673996972
+    url: https://cwp.appfolio.com/listings
     base: https://cwp.appfolio.com
     parser: advent
     javascript: True
 openworld:
-    url: http://openworld.appfolio.com/listings?1463675923117
+    url: http://openworld.appfolio.com/listings
     base: http://openworld.appfolio.com
     parser: advent
     javascript: True
 msb:
-    url: https://msbpropertymanagement.appfolio.com/listings/?1463676684673
+    url: https://msbpropertymanagement.appfolio.com/listings
     base: https://msbpropertymanagement.appfolio.com
     parser: advent
     javascript: True
 sg:
-    url: https://sgrealestate.appfolio.com/listings/?1464738450587
+    url: https://sgrealestate.appfolio.com/listings
     base: https://sgrealestate.appfolio.com
     parser: advent
     javascript: True

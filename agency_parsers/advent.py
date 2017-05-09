@@ -8,7 +8,7 @@ def parse(page, base, *args, **kwargs):
     for entry in soup.findAll('div', class_='listing-item result js-listing-item'):
         listing = {}
         try:
-            listing['url'] = base + entry.find('a', class_='js-link-to-detail').attrs['href']
+            listing['url'] = base + entry.find('a', class_='btn js-hand-hidden-link-to-detail').attrs['href']
 
             try:
                 title = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()
