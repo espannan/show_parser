@@ -43,3 +43,28 @@ sg:
     base: https://sgrealestate.appfolio.com
     parser: advent
     javascript: True
+all_east_bay_properties:
+    url: http://alleastbayproperties.appfolio.com/listings
+    base: http://alleastbayproperties.appfolio.com
+    parser: advent
+    javascript: True
+bay_cities:
+    url: http://baycitiespm.appfolio.com/listings
+    base: http://baycitiespm.appfolio.com
+    parser: advent
+    javascript: True
+ppm:
+    url: http://profpm.appfolio.com/listings
+    base: http://profpm.appfolio.com
+    parser: advent
+    javascript: True
+cedar_properties:
+    url: http://cedarpm.appfolio.com/listings
+    base: http://cedarpm.appfolio.com
+    parser: advent
+    javascript: True
+american_marketing_systems:
+    url: https://amsires.appfolio.com/listings
+    base: https://amsires.appfolio.com
+    parser: advent
+    javascript: True
