@@ -1,7 +1,7 @@
 fox:
-    url: http://www.thefoxoakland.com/calendar.php
+    url: http://www.thefoxoakland.com/listing/
     parser: fox
-    javascript: True
+    javascript: False
 
 regency:
     url: http://www.theregencyballroom.com/events/all
@@ -22,4 +22,3 @@ masonic:
     url: http://sfmasonic.com/venue-calendar/
     parser: masonic
     javascript: True
-

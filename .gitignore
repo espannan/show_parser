@@ -1,2 +1,5 @@
+.gitignore
 *.pyc
 ghostdriver.log
+rentals.html
+logs/rentals.txt

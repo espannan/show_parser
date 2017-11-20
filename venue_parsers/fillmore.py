@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import re
+from datetime import datetime
 
 
 def parse(page, *args, **kwargs):
@@ -19,9 +19,9 @@ def parse(page, *args, **kwargs):
 
         date = time_info.next_element
 
-        show['date'] = str(date)
+        time = str(date.next_element.next_element).split(' // ')[1].replace('Show ', '').replace('.', '').strip()
 
-        show['time'] = str(date.next_element.next_element)
+        show['showtime'] = datetime.strptime('{} {}'.format(date, time), '%A, %B %d, %Y %I:%M %p')
 
         shows.append(show)
 

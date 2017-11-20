@@ -14,4 +14,4 @@ for venue, venue_shows in shows.items():
         print '\t', show['headliner']
         if 'openers' in show:
             print '\t\t', show['openers']
-        print '\t\t(', show['time'], ') ', show['date']
+        print '\t\t', show['showtime']

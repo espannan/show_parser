@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
 import re
 
 
@@ -25,14 +26,12 @@ def parse(page, *args, **kwargs):
                 show['openers'] = text
 
             # get the date
-            text = re.sub(r'\s+', ' ', info.parent.parent.parent.findChild('span', class_='fa fa-calendar-o').next_sibling).strip()
-            if text:
-                show['date'] = text
+            date = re.sub(r'\s+', ' ', info.parent.parent.parent.findChild('span', class_='fa fa-calendar-o').next_sibling).strip()
 
             # get the time
-            text = re.sub(r'\s+', ' ', info.parent.parent.parent.findChild('span', class_='fa fa-clock-o').next_sibling).strip()
-            if text:
-                show['time'] = re.sub('Show ', '', text)
+            time = re.sub(r'\s+', ' ', info.parent.parent.parent.findChild('span', class_='fa fa-clock-o').next_sibling).strip()
+
+            show['showtime'] = datetime.strptime('{} {}'.format(date, time.replace('Show ', '')), '%a, %b %d, %Y %I:%M %p')
 
             shows.append(show)
 

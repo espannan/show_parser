@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 
 def parse(page, *args, **kwargs):
@@ -11,9 +12,11 @@ def parse(page, *args, **kwargs):
     for event in events_listing:
         show = {'headliner': event.find('div', class_='title').text}
 
-        show['date'] = event.find('div', class_='bottom').text
+        date = event.find('div', class_='bottom').text
 
-        show['time'] = event.find('div', class_='door').text
+        time = event.find('div', class_='door').text.split(' // ')[1].replace('Event: ', '').strip()
+
+        show['showtime'] = datetime.strptime('{} {}'.format(date, time), '%A, %B %d, %Y %I:%M %p')
 
         shows.append(show)
 

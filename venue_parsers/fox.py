@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import re
+from datetime import datetime
 
 
 def parse(page, *args, **kwargs):
@@ -7,26 +7,17 @@ def parse(page, *args, **kwargs):
 
     shows = []
 
-    table = soup.find('table', class_='concert_calendar')
+    for entry in soup.findAll('div', class_='mix detail-information'):
+        show = {}
+        show['headliner'] = entry.find('h2', class_='show-title').text
 
-    for entry in table.findAll('tr'):
+        openers = entry.find('h3', class_='support')
+        if openers is not None:
+            show['openers'] = openers.text
 
-        main_act = entry.find('span', class_='headliner')
-        if main_act:
-            prepender = main_act.find('span', class_='prepend')
-            if prepender:
-                headliner = prepender.findNextSibling()
-                show = {'headliner': headliner.text}
-            else:
-                show = {'headliner': main_act.text}
-            opening_act = entry.find('span', class_="warmup")
-            if opening_act:
-                if opening_act.text:
-                    show['openers'] = opening_act.text
-            show_date = entry.findChild()
-            show['date'] = re.sub('\,', ', ', show_date.text)
-            show_time = main_act.findParent().findParent().findNextSibling()
-            show['time'] = re.sub('show', '', show_time.text).strip()
-            shows.append(show)
+        date_show = entry.find('div', class_='date-show')
+        show['showtime'] = datetime.strptime(date_show.attrs['content'], '%B %d, %Y %I:%M %p')
+
+        shows.append(show)
 
     return shows
