@@ -6,9 +6,13 @@ import sys
 env = Environment(loader=FileSystemLoader('templates'))
 template = env.get_template('rentals.html')
 
-debug = len(sys.argv) > 1 and sys.argv[1] == '-d'
+debug = '-d' in sys.argv
 
-collector = Collector('config/agencies.yml', 'agency_parsers', debug)
+region = 'bay_area'
+if '--region' in sys.argv:
+    region = sys.argv[sys.argv.index('--region') + 1]
+
+collector = Collector('config/agencies.yml', 'agency_parsers', debug=debug, subset=region)
 
 collector.load_log('rentals')
 
@@ -28,6 +32,6 @@ collector.write_log(agency_listings, 'rentals')
 
 rendered_page = template.render(agency_listings=agency_listings)
 
-f = open('rentals.html', 'w')
+f = open('{}_rentals.html'.format(region), 'w')
 f.write(rendered_page.encode('utf-8'))
 f.close()

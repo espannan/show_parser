@@ -6,13 +6,16 @@ import time
 
 class Collector(object):
 
-    def __init__(self, config_file, parser_directory, debug=False):
+    def __init__(self, config_file, parser_directory, debug=False, subset=None):
         self.sites = yaml.load(open(config_file))
+        if subset is not None:
+            self.sites = self.sites[subset]
         self.parser_directory = parser_directory
         self.debug = debug
         self.site_divider = '*****'
         self.item_divider = '^^^^^'
         self.title_divider = ':::'
+        self.subset = subset
 
     def get_loaded_page(self, url):
         try:

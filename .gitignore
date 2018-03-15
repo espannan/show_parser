@@ -1,5 +1,5 @@
 .gitignore
 *.pyc
 ghostdriver.log
-rentals.html
+*rentals.html
 logs/rentals.txt

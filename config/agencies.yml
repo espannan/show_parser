@@ -1,70 +1,97 @@
-advent:
-    url: https://adventproperties.appfolio.com/listings
-    base: https://adventproperties.appfolio.com
-    parser: advent
-    javascript: True
-slpm:
-    url: https://slpm.appfolio.com/listings
-    base: https://slpm.appfolio.com
-    parser: advent
-    javascript: True
-crpm:
-    url: https://communityrealtypm.appfolio.com/listings
-    base: https://communityrealtypm.appfolio.com
-    parser: advent
-    javascript: True
-bay_property_group:
-    url: https://baypropertygroup.appfolio.com/listings
-    base: https://baypropertygroup.appfolio.com
-    parser: advent
-    javascript: True
-discovery:
-    url: https://discovery.appfolio.com/listings
-    base: https://discovery.appfolio.com
-    parser: advent
-    javascript: True
-cwp:
-    url: https://cwp.appfolio.com/listings
-    base: https://cwp.appfolio.com
-    parser: advent
-    javascript: True
-openworld:
-    url: http://openworld.appfolio.com/listings
-    base: http://openworld.appfolio.com
-    parser: advent
-    javascript: True
-msb:
-    url: https://msbpropertymanagement.appfolio.com/listings
-    base: https://msbpropertymanagement.appfolio.com
-    parser: advent
-    javascript: True
-sg:
-    url: https://sgrealestate.appfolio.com/listings
-    base: https://sgrealestate.appfolio.com
-    parser: advent
-    javascript: True
-all_east_bay_properties:
-    url: http://alleastbayproperties.appfolio.com/listings
-    base: http://alleastbayproperties.appfolio.com
-    parser: advent
-    javascript: True
-bay_cities:
-    url: http://baycitiespm.appfolio.com/listings
-    base: http://baycitiespm.appfolio.com
-    parser: advent
-    javascript: True
-ppm:
-    url: http://profpm.appfolio.com/listings
-    base: http://profpm.appfolio.com
-    parser: advent
-    javascript: True
-cedar_properties:
-    url: http://cedarpm.appfolio.com/listings
-    base: http://cedarpm.appfolio.com
-    parser: advent
-    javascript: True
-american_marketing_systems:
-    url: https://amsires.appfolio.com/listings
-    base: https://amsires.appfolio.com
-    parser: advent
-    javascript: True
+bay_area:
+    advent:
+        url: https://adventproperties.appfolio.com/listings
+        base: https://adventproperties.appfolio.com
+        parser: advent
+        javascript: True
+    slpm:
+        url: https://slpm.appfolio.com/listings
+        base: https://slpm.appfolio.com
+        parser: advent
+        javascript: True
+    crpm:
+        url: https://communityrealtypm.appfolio.com/listings
+        base: https://communityrealtypm.appfolio.com
+        parser: advent
+        javascript: True
+    bay_property_group:
+        url: https://baypropertygroup.appfolio.com/listings
+        base: https://baypropertygroup.appfolio.com
+        parser: advent
+        javascript: True
+    discovery:
+        url: https://discovery.appfolio.com/listings
+        base: https://discovery.appfolio.com
+        parser: advent
+        javascript: True
+    cwp:
+        url: https://cwp.appfolio.com/listings
+        base: https://cwp.appfolio.com
+        parser: advent
+        javascript: True
+    openworld:
+        url: http://openworld.appfolio.com/listings
+        base: http://openworld.appfolio.com
+        parser: advent
+        javascript: True
+    msb:
+        url: https://msbpropertymanagement.appfolio.com/listings
+        base: https://msbpropertymanagement.appfolio.com
+        parser: advent
+        javascript: True
+    sg:
+        url: https://sgrealestate.appfolio.com/listings
+        base: https://sgrealestate.appfolio.com
+        parser: advent
+        javascript: True
+    all_east_bay_properties:
+        url: http://alleastbayproperties.appfolio.com/listings
+        base: http://alleastbayproperties.appfolio.com
+        parser: advent
+        javascript: True
+    bay_cities:
+        url: http://baycitiespm.appfolio.com/listings
+        base: http://baycitiespm.appfolio.com
+        parser: advent
+        javascript: True
+    ppm:
+        url: http://profpm.appfolio.com/listings
+        base: http://profpm.appfolio.com
+        parser: advent
+        javascript: True
+    cedar_properties:
+        url: http://cedarpm.appfolio.com/listings
+        base: http://cedarpm.appfolio.com
+        parser: advent
+        javascript: True
+    american_marketing_systems:
+        url: https://amsires.appfolio.com/listings
+        base: https://amsires.appfolio.com
+        parser: advent
+        javascript: True
+seattle:
+    ballard_realty:
+        url: https://ballardpm.appfolio.com/listings
+        base: https://ballardpm.appfolio.com
+        parser: advent
+        javascript: True
+    walls:
+        url: http://wallspropmgmt.appfolio.com//listings
+        base: http://wallspropmgmt.appfolio.com
+        parser: advent
+        javascript: True
+    apple:
+        url: http://applepm.appfolio.com//listings
+        base: http://applepm.appfolio.com
+        parser: advent
+        javascript: True
+    davis:
+        url: http://davis.appfolio.com//listings
+        base: http://davis.appfolio.com
+        parser: advent
+        javascript: True
+    north_pacific:
+        url: http://northpacificpm.appfolio.com//listings
+        base: http://northpacificpm.appfolio.com
+        parser: advent
+        javascript: True
