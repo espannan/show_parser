@@ -4,11 +4,10 @@ from bs4 import BeautifulSoup
 def parse(page, base, *args, **kwargs):
     soup = BeautifulSoup(page, 'html.parser')
     listings = []
-
     for entry in soup.findAll('div', class_='listing-item result js-listing-item'):
         listing = {}
         try:
-            listing['url'] = base + entry.find('a', class_='btn js-hand-hidden-link-to-detail').attrs['href']
+            listing['url'] = base + entry.find_next('a').attrs['href']
 
             try:
                 title = entry.find('h2', class_='listing-item__title js-listing-title').text.strip()

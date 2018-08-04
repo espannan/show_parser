@@ -95,3 +95,48 @@ seattle:
         base: http://northpacificpm.appfolio.com
         parser: advent
         javascript: True
+    maple_leaf:
+        url: https://mapleleafmanagement.appfolio.com/listings
+        base: https://mapleleafmanagement.appfolio.com
+        parser: advent
+        javascript: True
+    avenue_one:
+        url: http://avenueone.appfolio.com/listings
+        base: http://avenueone.appfolio.com
+        parser: advent
+        javascript: True
+    dwellings:
+        url: http://dwellingsseattle.appfolio.com/listings
+        base: http://dwellingsseattle.appfolio.com
+        parser: advent
+        javascript: True
+    haven:
+        url: http://haven.appfolio.com/listings
+        base: http://haven.appfolio.com
+        parser: advent
+        javascript: True
+    sja:
+        url: https://sja.appfolio.com/listings
+        base: https://sja.appfolio.com
+        parser: advent
+        javascript: True
+    redside:
+        url: http://redside.appfolio.com/listings
+        base: http://redside.appfolio.com
+        parser: advent
+        javascript: True
+    in_city:
+        url: http://incitypropertyholdings.appfolio.com/listings
+        base: http://incitypropertyholdings.appfolio.com
+        parser: advent
+        javascript: True
+    pacific_crest:
+        url: http://pacificcrest.appfolio.com/listings
+        base: http://pacificcrest.appfolio.com
+        parser: advent
+        javascript: True
+    emerald_heights:
+        url: http://emeraldheights.appfolio.com/listings
+        base: http://emeraldheights.appfolio.com
+        parser: advent
+        javascript: True

@@ -8,7 +8,7 @@ template = env.get_template('rentals.html')
 
 debug = '-d' in sys.argv
 
-region = 'bay_area'
+region = 'seattle'
 if '--region' in sys.argv:
     region = sys.argv[sys.argv.index('--region') + 1]
 
