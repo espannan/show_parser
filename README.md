@@ -34,10 +34,12 @@ At this time, this simply prints the list of shows to the console. TODO: Output 
 To run the rental parser, run:
 
 ```bash
-$ ./rental_parser.py
+$ ./rental_parser.py --region <region>
 ```
 
-This produces `rentals.html`, which you can then open in your browser to view available listings.
+**Note:** This is currently configured to run with the following regions: `bay_area` and `seattle`.
+
+This produces `<region>_rentals.html`, which you can then open in your browser to view available listings.
 
 Using the Collector
 -------------------
