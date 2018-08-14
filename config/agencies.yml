@@ -140,3 +140,8 @@ seattle:
         base: http://emeraldheights.appfolio.com
         parser: advent
         javascript: True
+    tag:
+        url: http://tag.appfolio.com/listings
+        base: http://tag.appfolio.com
+        parser: advent
+        javascript: True
